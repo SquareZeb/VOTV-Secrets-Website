@@ -15,7 +15,7 @@
         }
         hr {
             height: 50px;
-            width: 1232px;\
+            width: 1232px;
             background-color: #333;
             border: none;
             margin: 5px;
@@ -83,7 +83,7 @@
         }
         .content {
             margin-left: 200px;
-            position: absolute;
+            position: relative;
             padding: 20px;
             z-index: 1;
         }
