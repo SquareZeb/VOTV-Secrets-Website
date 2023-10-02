@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Voices of the Void Secrets Archive</title>
+    <style>
+        body {
+            background-image: url("Images/Home.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        hr {
+            height: 50px;
+            width: 3000px;
+            background-color: #333;
+            border: none;
+            margin: 5px;
+            border: 2px solid #000;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: Lato;
+            font-size: 80px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: black;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: thistle;
+            font-family: Times New Roman;
+            font-style: italic;
+            font-size: 37px;
+            background-color: black;
+            width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        h3 {
+            text-align: center;
+            color: blanchedalmond;
+            font-family: Arial;
+            font-size: 26px;
+            background-color: black;
+            width: 200px;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        h4 {
+            text-align: center;
+            color: grey;
+            font-family: Nunito Sans;
+            font-size: 18px;
+            background-color: black;
+            width: 400px;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        p {
+            color: white;
+            text-align: right;
+            font-family: Arial;
+            padding: 6px;
+            width: 1000px;
+            margin: 0 auto;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 0px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+            nav li a {
+                display: block;
+                font-family: Raleway;
+                border: 2px solid #000;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+            }
+                nav li a:hover {
+                    background-color: #111;
+                }
+        .generated-links {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: none;
+        }
+        .tab:hover .generated-links {
+            display: block;
+        }
+        .generated-links li {
+            margin-bottom: 5px;
+        }
+        .generated-links a {
+            display: block;
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+            .container img {
+                display: block;
+                max-width: 600px;
+                max-height: 500px;
+                cursor: pointer;
+                margin: 2px;
+                background-color: black;
+                border: 2px solid black;
+                padding: 1px;
+            }
+        #promoTab {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            font-size: 20px;
+        }
+        #socialLinks {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 10px;
+        }
+        #promoTab:hover #socialLinks {
+            display: flex;
+            background-color: #0c33ee;
+            color: darkorchid;
+        }
+        #socialLinks a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="tab">
+                    <a href="Objects/objectswiki.html">Objects</a>
+                </li>
+                <li class="tab">
+                    <a href="Entities/entitieswiki.html">Entities</a>
+                </li>
+                <li class="tab">
+                    <a>Worlds</a>
+                    <ul class="generated-links">
+                        <li><a href="Worlds/testlevelswiki.html">Test Levels</a></li>
+                        <li><a href="Worlds/anomalyworldswiki.html">Anomaly Worlds</a></li>
+                        <li><a href="Worlds/otherworldswiki.html">Other Worlds</a></li>
+                    </ul>
+                </li>
+                <li class="tab">
+                    <a>Signals</a>
+                    <ul class="generated-links">
+                        <li><a href="Signals/deepspacesigswiki.html">Deep Space Signals</a></li>
+                        <li><a href="Signals/planetsigswiki.html">Planet Signals</a></li>
+                        <li><a href="Signals/specialsigswiki.html">Special Signals</a></li>
+                        <li><a href="Signals/siggensigswiki.html">Sig Gen Signals</a></li>
+                        <li><a href="Signals/othersigswiki.html">Other Signals</a></li>
+                    </ul>
+                </li>
+                <li class="tab">
+                    <a>Events</a>
+                    <ul class="generated-links">
+                        <li><a href="Events/storymodeeventswiki.html">Storymode Events</a></li>
+                        <li><a href="Events/triggerableeventswiki.html">Triggerable Events</a></li>
+                        <li><a href="Events/randomeventswiki.html">Random Events</a></li>
+                        <li><a href="Events/333ameventswiki.html">3:33 AM Events</a></li>
+                    </ul>
+                </li>
+                <li class="tab">
+                    <a href="Structures/structureswiki.html">Structures</a>
+                </li>
+                <li class="tab">
+                    <a href="ConsoleCommands/consolecommandswiki.html">Console Commands</a>
+                </li>
+                <li class="tab">
+                    <a href="Dreams/dreamswiki.html">Dreams</a>
+                </li>
+                <li class="tab">
+                    <a href="Achievements/achievementswiki.html">Achievements</a>
+                </li>
+                <li class="tab">
+                    <a href="GameEndings/endingswiki.html">Game Endings</a>
+                </li>
+                <li class="tab">
+                    <a href="InteractiveMap/interactablemap.html">Map of Everything</a>
+                </li>
+            </ul>
+            <div id="promoTab">
+                <div id="socialLinks">
+                    <a href="https://github.com/SquareZeb" target="_blank">Github</a>
+                    <a href="https://www.youtube.com/channel/UCSPSGIg3wWMowzCL-1tc_Hg" target="_blank">Youtube</a>
+                    <a href="https://discord.gg/vzkMs8sH2z" target="_blank">Discord</a>
+                </div>
+                <img src="Images/Promo.png" alt="Social Icon" width="30" height="30" style="border-radius: 50%">
+                Created by: <span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>Voices of the Void</h1>
+        <h2 style="text-align:center; font-style:italic;">All Hidden Secrets and Easter Eggs</h2>
+        <h3 style="text-align:center; font-style:oblique;">Description:</h3>
+        <p style="text-align:center;">Voices of the Void is a game created by mrdrnose. The game is inspired by Signal Simulator with the genre of a simulator game. </p>
+        <p style="text-align:center;">The game is mostly centered around a scientist, whom you assume the role as, who works in a remote research lab in the mountains of Switzerland tasked with gathering, processing, and saving signals from outer space. </p>
+        <p style="text-align:center;">When the signals are gathered and processed you can sell them to the other scientists at the facility for a currency known as credit in which you can buy upgrades and items from the shop. </p>
+        <p style="text-align:center;">In this game there are hundreds of signals and more are being added with every new update, these signals can range from normal celestial objects such as planets, stars, and etc, to rare objects such as satellites, unknown objects, and etc.</p>
+        <p style="text-align:center;">This game also features a large open world map with various structures, objects, and items scattered across it. </p>
+        <h3 style="text-align:center; font-style:oblique;">Aim of the forum:</h3>
+        <p style="text-align:center;">However in this game lies tons of easter eggs and secrets that either lie within the game itself, lore, or game files. This archive and webpage is dedicated to archive and record of every single hidden secret or easter egg that exists within VOTV (Voices of the Void for short).</p>
+        <h3 style="text-align:center; font-style:oblique;">Credits:</h3>
+        <p style="text-align:center;color:red;">Note: This game has not been fully released and there may be secrets and easter eggs that have not been discovered which may render this archive outdated.</p>
+        <p style="text-align:center;color:lawngreen;"><a href="https://mrdrnose.itch.io/votv">Voices of the Void:</a></p>
+        <p style="text-align:center;color:lawngreen;">If any new secret or hidden easter egg pops up you may contact me through <a href="https://discordapp.com/users/813250158384906260">here:</a></p>
+    </div>
+    <script src="Scripts/basejs.js"></script>
+</body>
+</html>
