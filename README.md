@@ -5,7 +5,7 @@ VOTV Secrets Website is dedicated to archiving all of the secrets, spoilers, and
 It is highly recommended that before browsing on this site, actually go play the game of VOTV first. Just so that none of the content or info you see on the site will ruin the game experience for you. But the choice is up to you and yours only, I'm not responsible for ruining anyone's experiences in VOTV.
 
 ## Credits:
-With that being said, you may also contact me if there are any new easter eggs or something has changed: https://discordapp.com/users/449697984217612288
+With that being said, you may also contact me if there are any new easter eggs or something has changed: https://discordapp.com/users/813250158384906260
 
 Game download: https://mrdrnose.itch.io/votv
 
