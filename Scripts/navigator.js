@@ -7,11 +7,10 @@
             background-color: black;
             position: fixed;
             border: 2px solid #333;
-            top: 0;
             left: 22.8%;
             width: 1232px;
             height: 100%;
-            z-index: -1;
+	    z-index: -1;
         }
         hr {
             height: 50px;
@@ -85,7 +84,7 @@
             margin-left: 200px;
             position: relative;
             padding: 20px;
-            z-index: 1;
+            z-index: -1;
         }
         .image-zoom {
             position: fixed;
@@ -217,10 +216,62 @@
             text-decoration: none;
             color: #fff;
         }
+        .search-container {
+            display: inline-block;
+            position: absolute;
+            left: 160px;
+            bottom: 900px;
+        }
+        .search-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .search-bar {
+            width: 0;
+            padding: 5px 10px;
+            border: none;
+            background: transparent;
+            color: white;
+            transition: width 0.4s ease-in-out;
+            position: absolute;
+            top: 10px;
+            left: 45px;
+            border-bottom: 1px solid white;
+        }
+        .search-container:hover {
+            width: 220px
+        }
+        .search-container:hover .search-bar {
+            width: 150px; 
+        }
+        #searchResults {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            max-height: 600px;
+            max-width: 400px;
+            overflow-y: auto;
+            overflow-x: auto;
+            background: transparent;
+            border: 1px solid #ddd;
+            display: none;
+            z-index: 1000;
+            padding: 10px;
+        }
+            #searchResults p {
+                margin: 5px 0;
+                width: 600px;
+            }
+        .search-container:focus-within #searchResults {
+            display: block;
+        }
+        mark {
+            background-color: lightblue;
+        }
     </style>
 </head>
 <body>
-    <div class="background-box"></div>
     <header>
         <nav>
             <ul>
@@ -287,6 +338,11 @@
                 </div>
                 <img src="../Images/Promo.png" alt="Social Icon" width="30" height="30" style="border-radius: 50%">
                 Created by: <span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span>
+            </div>
+            <div class="search-container" style="z-index: 10000;">
+                <img src="../Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+                <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+                <div id="searchResults"></div>
             </div>
         </nav>
     </header>
