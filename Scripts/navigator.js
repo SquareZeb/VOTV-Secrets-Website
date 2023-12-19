@@ -218,8 +218,8 @@
         .search-container {
             display: inline-block;
             position: fixed;
-            left: 200px;
-            top: 20px;
+            left: 165px;
+            top: 5px;
         }
         .search-icon {
             width: 40px;
@@ -252,7 +252,7 @@
             max-width: 400px;
             overflow-y: auto;
             overflow-x: auto;
-            background: transparent;
+            background-color: black;
             border: 1px solid #ddd;
             display: none;
             padding: 10px;
