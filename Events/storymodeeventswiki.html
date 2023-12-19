@@ -19,6 +19,7 @@
         <script src="../Scripts/tableimage.js"></script>
     </header>
     <div class="content">
+        <div class="background-box"></div>
         <h1 style="text-align:center; font-style:oblique;">Storymode Events</h1>
         <h2 style="text-align:center; font-style:oblique;">Description:</h2>
         <p style="text-align:center;">In VOTV there are different gamemodes that you can select and choose to play in, such modes include Story, Infinite, and Sandbox. In storymode there are certain scripted events that can occur that do not occur in other modes. These events can have a couple triggers but most of them are usually triggered by the day count.</p>
@@ -30,9 +31,9 @@
                 <th>Image</th>
             </tr>
             <tr>
-                <td>Shooting Stars Event</td>
-                <td style="text-align: left;">Very early on day 2 you can observe the streaks of shooting stars across the night sky.</td>
-                <td style="text-align: center;">Day 2</td>
+                <td id="1">Shooting Stars Event</td>
+                <td id="17" style="text-align: left;">Very early on day 2 you can observe the streaks of shooting stars across the night sky.</td>
+                <td id="18" style="text-align: center;">Day 2</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/1.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -40,9 +41,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Mannequin Disappearance Event</td>
-                <td style="text-align: left;">On any day between 4-20, all mannequins in your base will disappear. However, they can all be found laying in the small patch of gravel near the Uniform Satellite Dish. This event can occur in infinite and ambient gamemodes.</td>
-                <td style="text-align: center;">Day 4-20</td>
+                <td id="2">Mannequin Disappearance Event</td>
+                <td id="19" style="text-align: left;">On any day between 4-20, all mannequins in your base will disappear. However, they can all be found laying in the small patch of gravel near the Uniform Satellite Dish. This event can occur in infinite and ambient gamemodes.</td>
+                <td id="20" style="text-align: center;">Day 4-20</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/2.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -50,9 +51,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Poweroff Event</td>
-                <td style="text-align: left;">On day 6, all power switches will be switched to off, while power will still be supplied to the base through the transformers and generators you will need to manually switch the power yourself in order to continue functioning as normal.</td>
-                <td style="text-align: center;">Day 6</td>
+                <td id="3">Poweroff Event</td>
+                <td id="21" style="text-align: left;">On day 6, all power switches will be switched to off, while power will still be supplied to the base through the transformers and generators you will need to manually switch the power yourself in order to continue functioning as normal.</td>
+                <td id="22" style="text-align: center;">Day 6</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/3.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -60,9 +61,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Mannequin Moving Event</td>
-                <td style="text-align: left;">On this day is when mannequins, one per day, will first take off their standing pole and begin moving around. They usually move towards the player and while they don't do anything initially, if they are lit on fire they will begin attacking, hurting, and knocking down the player.</td>
-                <td style="text-align: center;">Day 9</td>
+                <td id="4">Mannequin Moving Event</td>
+                <td id="23" style="text-align: left;">On this day is when mannequins, one per day, will first take off their standing pole and begin moving around. They usually move towards the player and while they don't do anything initially, if they are lit on fire they will begin attacking, hurting, and knocking down the player.</td>
+                <td id="24" style="text-align: center;">Day 9</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/4.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -72,8 +73,8 @@
             </tr>
             <tr>
                 <td id="picnic">Ariral Picnic Event</td>
-                <td style="text-align: left;">On this day is when two Warp Arrows and a small picnic of cookies, burgers, soda cans, bottles, some shrimp, cups, and two baskets will appear. There will also be 2 figurine toys of the Warp Arrows which you can grab. When you first approach this structure/event an invisible <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> will be heard running away from you. In the older versions, along with all the items listed here, there used to be a Brynfruit and a Shrimp Burger that could spawn.</td>
-                <td style="text-align: center;">Day 10</td>
+                <td id="25" style="text-align: left;">On this day is when two Warp Arrows and a small picnic of cookies, burgers, soda cans, bottles, some shrimp, cups, and two baskets will appear. There will also be 2 figurine toys of the Warp Arrows which you can grab. When you first approach this structure/event an invisible <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> will be heard running away from you. In the older versions, along with all the items listed here, there used to be a Brynfruit and a Shrimp Burger that could spawn.</td>
+                <td id="26" style="text-align: center;">Day 10</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/6.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -86,8 +87,8 @@
             </tr>
             <tr>
                 <td id="asse">Ariral Ship Scan Event</td>
-                <td style="text-align: left;">While this event has been removed from the newer versions of the game nevertheless it still exists within it. It used to exist in the older versions of VOTV at around 0.3.0 and earlier but was removed in 0.5.0. it would have a Warp Arrow teleport in front of the Main Base and begin scanning the entire environment around it. This also causes your emergency sirens to flare up. The Warp Arrow will continously scan until enough time has passed and it will fly out and teleport creating a massive bright blue wave across the entire map.</td>
-                <td style="text-align: center;">Day 12, removed from main storyline</td>
+                <td id="27" style="text-align: left;">While this event has been removed from the newer versions of the game nevertheless it still exists within it. It used to exist in the older versions of VOTV at around 0.3.0 and earlier but was removed in 0.5.0. it would have a Warp Arrow teleport in front of the Main Base and begin scanning the entire environment around it. This also causes your emergency sirens to flare up. The Warp Arrow will continously scan until enough time has passed and it will fly out and teleport creating a massive bright blue wave across the entire map.</td>
+                <td id="28" style="text-align: center;">Day 12, removed from main storyline</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/9.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -101,8 +102,8 @@
             </tr>
             <tr>
                 <td id="ariralshipevent">Ariral Ship Event</td>
-                <td style="text-align: left;">During the day you can observe that the <a style="color: greenyellow;" href="../Structures/structureswiki.html#picnic">Ariral Picnic</a> along with its 2 Warp arrows except for the picnic blanket will have disappeared. During the night you can observe a floating Warp Arrow that is just hovering in the distance. Once you approach it or get close it will warp out of existence.</td>
-                <td style="text-align: center;">Day 14</td>
+                <td id="29" style="text-align: left;">During the day you can observe that the <a style="color: greenyellow;" href="../Structures/structureswiki.html#picnic">Ariral Picnic</a> along with its 2 Warp arrows except for the picnic blanket will have disappeared. During the night you can observe a floating Warp Arrow that is just hovering in the distance. Once you approach it or get close it will warp out of existence.</td>
+                <td id="30" style="text-align: center;">Day 14</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/13.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -114,9 +115,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Mannequin Reorganize Event</td>
-                <td style="text-align: left;">When this day occurs, a posed mannequin will be blocking the main entrance doorway, another posed mannequin looking through the bathroom window on top of some wooden palettes, and 6 cups stacked on each other either on the table or on the floor.</td>
-                <td style="text-align: center;">Day 16</td>
+                <td id="5">Mannequin Reorganize Event</td>
+                <td id="31" style="text-align: left;">When this day occurs, a posed mannequin will be blocking the main entrance doorway, another posed mannequin looking through the bathroom window on top of some wooden palettes, and 6 cups stacked on each other either on the table or on the floor.</td>
+                <td id="32" style="text-align: center;">Day 16</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/16.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -128,9 +129,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Blue Light Prank Event</td>
-                <td style="text-align: left;">All power switches will be switched off just like Poweroff Event, however this time there will be extremely bright light blue tubes lighting certain parts of the base. The entity radar will detect these as entities, however they are extremely fragile so be very careful when handling them.</td>
-                <td style="text-align: center;">Day 17, 3:33 am</td>
+                <td id="6">Blue Light Prank Event</td>
+                <td id="33" style="text-align: left;">All power switches will be switched off just like Poweroff Event, however this time there will be extremely bright light blue tubes lighting certain parts of the base. The entity radar will detect these as entities, however they are extremely fragile so be very careful when handling them.</td>
+                <td id="34" style="text-align: center;">Day 17, 3:33 am</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/19.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -142,9 +143,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Password Attempt Event</td>
-                <td style="text-align: left;">Throughout the day, you may hear or encounter a mysterious invisible force attempting to guess the password to the keylocks.</td>
-                <td style="text-align: center;">Day 19</td>
+                <td id="7">Password Attempt Event</td>
+                <td id="35" style="text-align: left;">Throughout the day, you may hear or encounter a mysterious invisible force attempting to guess the password to the keylocks.</td>
+                <td id="36" style="text-align: center;">Day 19</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/22.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -152,9 +153,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Broken Vent Event</td>
-                <td style="text-align: left;">The vent above the Command Console will break off and fall down.</td>
-                <td style="text-align: center;">Day 20</td>
+                <td id="8">Broken Vent Event</td>
+                <td id="37" style="text-align: left;">The vent above the Command Console will break off and fall down.</td>
+                <td id="38" style="text-align: center;">Day 20</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/23.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -162,9 +163,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Ariral Anti-G Event</td>
-                <td style="text-align: left;">An Warp Arrow will appear above the garage section of the Main Base, effectively flickering in and out of appearance. What will happen is all of the objects and items except yourself will begin floating up as if gravity weren't there. It will do this for a couple of minutes. And after the event is finished your ATV will disappear and spawn on the bridge near the Main Base, however with a lot more fuel than possible to obtain, around 314. However, your ATV will not be auto repaired by the Arirals.</td>
-                <td style="text-align: center;">Day 20</td>
+                <td id="9">Ariral Anti-G Event</td>
+                <td id="39" style="text-align: left;">An Warp Arrow will appear above the garage section of the Main Base, effectively flickering in and out of appearance. What will happen is all of the objects and items except yourself will begin floating up as if gravity weren't there. It will do this for a couple of minutes. And after the event is finished your ATV will disappear and spawn on the bridge near the Main Base, however with a lot more fuel than possible to obtain, around 314. However, your ATV will not be auto repaired by the Arirals.</td>
+                <td id="40" style="text-align: center;">Day 20</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/24.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -177,9 +178,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Ariral Ship Tower Event</td>
-                <td style="text-align: left;">If you visit the Radio Tower during night you can encounter a Warp arrow hovering right next to you for a few seconds before disappearing.</td>
-                <td style="text-align: center;">Day 20+</td>
+                <td id="10">Ariral Ship Tower Event</td>
+                <td id="41" style="text-align: left;">If you visit the Radio Tower during night you can encounter a Warp arrow hovering right next to you for a few seconds before disappearing.</td>
+                <td id="42" style="text-align: center;">Day 20+</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/28.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -187,9 +188,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Ding Dong Ditch Event</td>
-                <td style="text-align: left;">A series of knocks on the entrance door can be heard, after which you can find a strange egg outside the entrance door.</td>
-                <td style="text-align: center;">Day 24</td>
+                <td id="11">Ding Dong Ditch Event</td>
+                <td id="43" style="text-align: left;">A series of knocks on the entrance door can be heard, after which you can find a strange egg outside the entrance door.</td>
+                <td id="44" style="text-align: center;">Day 24</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/31.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -198,8 +199,8 @@
             </tr>
             <tr>
                 <td id="ariraltreehouse">Ariral Treehouse Event</td>
-                <td style="text-align: left;">On day 27 you can observe smoke coming from an area between the Papa Satellite Dish and Victor Satellite Dish, once approached you can discover two Warp Arrows, a campfire, some items, and the foundation for the treehouse. Starting from this point and on each day afterwards, the treehouse will be built up in stages, with each stage supplying different items and objects.</td>
-                <td style="text-align: center;">Days 27-31</td>
+                <td id="45" style="text-align: left;">On day 27 you can observe smoke coming from an area between the Papa Satellite Dish and Victor Satellite Dish, once approached you can discover two Warp Arrows, a campfire, some items, and the foundation for the treehouse. Starting from this point and on each day afterwards, the treehouse will be built up in stages, with each stage supplying different items and objects.</td>
+                <td id="46" style="text-align: center;">Days 27-31</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/32.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -207,9 +208,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Alien Cutout Event</td>
-                <td style="text-align: left;">When you enter inside Uniform Satellite Dish either to fix, hash, or calibrate the satellite you will hear 2 series of footsteps running up the stairs underneath you and eventually stop midway through. When you step outside you can find two completely unique alien cutout boards on one of the corners of the stairs.</td>
-                <td style="text-align: center;">Day 30+</td>
+                <td id="12">Alien Cutout Event</td>
+                <td id="47" style="text-align: left;">When you enter inside Uniform Satellite Dish either to fix, hash, or calibrate the satellite you will hear 2 series of footsteps running up the stairs underneath you and eventually stop midway through. When you step outside you can find two completely unique alien cutout boards on one of the corners of the stairs.</td>
+                <td id="48" style="text-align: center;">Day 30+</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/33.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -218,8 +219,8 @@
             </tr>
             <tr>
                 <td id="bte">Brownie Trail Event</td>
-                <td style="text-align: left;">A series of footsteps will be heard, if you are to observe from the outside, you will spot brownies being dropped in a path. If you were to follow the path of brownies you will eventually discover an entire pile of them plus a note warning you of an oncoming event.</td>
-                <td style="text-align: center;">Day 30</td>
+                <td id="49" style="text-align: left;">A series of footsteps will be heard, if you are to observe from the outside, you will spot brownies being dropped in a path. If you were to follow the path of brownies you will eventually discover an entire pile of them plus a note warning you of an oncoming event.</td>
+                <td id="50" style="text-align: center;">Day 30</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/34.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -232,8 +233,8 @@
             </tr>
             <tr>
                 <td id="stalker">Ariral Stalker Event</td>
-                <td style="text-align: left;">Two <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> stalkers will spawn at the Ariral Treehouse Landmark and begin making their way to you, once they reach you and presumably attack you once they will leave.</td>
-                <td style="text-align: center;">Day 30</td>
+                <td id="51" style="text-align: left;">Two <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> stalkers will spawn at the Ariral Treehouse Landmark and begin making their way to you, once they reach you and presumably attack you once they will leave.</td>
+                <td id="52" style="text-align: center;">Day 30</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/37.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -241,9 +242,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Dropped ArirGun Event</td>
-                <td style="text-align: left;">An Ariral scream will be heard outside the main base and after entering outside you can discover a free Arirgun in the bushes next to the front entrance of the base. This gun is the first variant of the prop meaning it can't be used by the player.</td>
-                <td style="text-align: center;">Day 31-32</td>
+                <td id="13">Dropped ArirGun Event</td>
+                <td id="53" style="text-align: left;">An Ariral scream will be heard outside the main base and after entering outside you can discover a free Arirgun in the bushes next to the front entrance of the base. This gun is the first variant of the prop meaning it can't be used by the player.</td>
+                <td id="54" style="text-align: center;">Day 31-32</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/38.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -251,9 +252,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Bed Prank Event</td>
-                <td style="text-align: left;">Whenever you are sleeping during this day, your bed, mattress, and yourself will be pulled or teleported into a area near the Sierra Satellite Dish.</td>
-                <td style="text-align: center;">Day 33</td>
+                <td id="14">Bed Prank Event</td>
+                <td id="55" style="text-align: left;">Whenever you are sleeping during this day, your bed, mattress, and yourself will be pulled or teleported into a area near the Sierra Satellite Dish.</td>
+                <td id="56" style="text-align: center;">Day 33</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/39.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -261,9 +262,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Paper Alien Arrival Event</td>
-                <td style="text-align: left;">At night, you'll recieve an email from Bao stating the nuclear reactor is restarting and some things may not work correctly. The garage door sparks and is broken and you have to climb to the top of the Radio Tower to fix some this issue. While you head outside you can observe three paper alien statues outside the main entrance door.</td>
-                <td style="text-align: center;">Day 34</td>
+                <td id="15">Paper Alien Arrival Event</td>
+                <td id="57" style="text-align: left;">At night, you'll recieve an email from Bao stating the nuclear reactor is restarting and some things may not work correctly. The garage door sparks and is broken and you have to climb to the top of the Radio Tower to fix some this issue. While you head outside you can observe three paper alien statues outside the main entrance door.</td>
+                <td id="58" style="text-align: center;">Day 34</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/40.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -276,8 +277,8 @@
             </tr>
             <tr>
                 <td id="obelisk">Obelisk Event</td>
-                <td style="text-align: left;">A loud boom can be heard in the distance, soon a fast moving object crashes into the ground knocking out the player no matter where it's at. It will also cause some damage to the surrounding area, soon the object which is an Obelisk will pop up a bright red screen warning the player of the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#kwisp">Killer Wisp Entities</a> which will soon spawn and continue spawning from this point on.</td>
-                <td style="text-align: center;">Day 35</td>
+                <td id="59" style="text-align: left;">A loud boom can be heard in the distance, soon a fast moving object crashes into the ground knocking out the player no matter where it's at. It will also cause some damage to the surrounding area, soon the object which is an Obelisk will pop up a bright red screen warning the player of the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#kwisp">Killer Wisp Entities</a> which will soon spawn and continue spawning from this point on.</td>
+                <td id="60" style="text-align: center;">Day 35</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/43.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -286,9 +287,9 @@
                 </td>
             </tr>
             <tr>
-                <td>Sun Blackout Event</td>
-                <td style="text-align: left;">The sun including all of it's natural light will disappear completely leaving the entire world in darkness. Dr Bao will send you an email stating to keep going. This will stay like this for another 30 seconds before it returns again. You will receive two emails, one from Bao stating it was strange and the other being from the Arirals who are apologizing.</td>
-                <td style="text-align: center;">Day 37</td>
+                <td id="16">Sun Blackout Event</td>
+                <td id="61" style="text-align: left;">The sun including all of it's natural light will disappear completely leaving the entire world in darkness. Dr Bao will send you an email stating to keep going. This will stay like this for another 30 seconds before it returns again. You will receive two emails, one from Bao stating it was strange and the other being from the Arirals who are apologizing.</td>
+                <td id="62" style="text-align: center;">Day 37</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/45.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -302,8 +303,8 @@
             </tr>
             <tr>
                 <td id="ariralvent">Ariral Vent Break-in Event</td>
-                <td style="text-align: left;">An <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> will spawn on top of the vent that is on the opposite corner of the Console Command vent, the vent will break with the Ariral frantically searching and picking up items and objects around it. It will also attack the player a couple of times before running away with an item that it has grabbed back to the Ariral Treehouse.</td>
-                <td style="text-align: center;">Day 38</td>
+                <td id="63" style="text-align: left;">An <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> will spawn on top of the vent that is on the opposite corner of the Console Command vent, the vent will break with the Ariral frantically searching and picking up items and objects around it. It will also attack the player a couple of times before running away with an item that it has grabbed back to the Ariral Treehouse.</td>
+                <td id="64" style="text-align: center;">Day 38</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/49.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -312,8 +313,8 @@
             </tr>
             <tr>
                 <td id="piramid">Piramid Event</td>
-                <td style="text-align: left;">When entering the main base at the specified time the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#piramid">Piramid Entity</a> will first spawn in the direction of the Tango Satellite Dish, from there the Piramid entity will begin walking within the bounds of the play area looking for any <a style="color: greenyellow;" href="../Entities/entitieswiki.html#kwisp">Killer Wisps</a> which once caught it will pick the entity and disintegrate it, once all <a style="color: greenyellow;" href="../Entities/entitieswiki.html#kwisp">Killer Wisps</a> have been caught the Piramid entity will walk off bounds and disappear.</td>
-                <td style="text-align: center;">Day 42, 18:00</td>
+                <td id="65" style="text-align: left;">When entering the main base at the specified time the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#piramid">Piramid Entity</a> will first spawn in the direction of the Tango Satellite Dish, from there the Piramid entity will begin walking within the bounds of the play area looking for any <a style="color: greenyellow;" href="../Entities/entitieswiki.html#kwisp">Killer Wisps</a> which once caught it will pick the entity and disintegrate it, once all <a style="color: greenyellow;" href="../Entities/entitieswiki.html#kwisp">Killer Wisps</a> have been caught the Piramid entity will walk off bounds and disappear.</td>
+                <td id="66" style="text-align: center;">Day 42, 18:00</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/50.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
@@ -326,8 +327,8 @@
             </tr>
             <tr>
                 <td id="rpe">Rozital Patrol Event</td>
-                <td style="text-align: left;">At night, several <a style="color: greenyellow;" href="../Entities/entitieswiki.html#tbe">Tentacle Ball Entities</a>, will spawn and roam around the map. The event will last an entire day as they will patrol all over the map and eventually disappear. </td>
-                <td style="text-align: center;">Day 44</td>
+                <td id="67" style="text-align: left;">At night, several <a style="color: greenyellow;" href="../Entities/entitieswiki.html#tbe">Tentacle Ball Entities</a>, will spawn and roam around the map. The event will last an entire day as they will patrol all over the map and eventually disappear. </td>
+                <td id="68" style="text-align: center;">Day 44</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/53.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -336,8 +337,8 @@
             </tr>
             <tr>
                 <td id="sce">Soltomia Cleaning Event</td>
-                <td style="text-align: left;">At night, a <a style="color: greenyellow;" href="../Entities/entitieswiki.html#soltomia">Soltomia Entity</a> will spawn near the ATV in garage and begin it's cleaning animation. When the player walks into the main room of Main Base, a bright spark or flash can be seen for a split second. Then front entrance door will be broken or will not open fully. When the player walks into the garage, the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#soltomia">Soltomia Entity</a> will quickly fly off and eventually disappear, leaving the sponge behind, and ending the event.</td>
-                <td style="text-align: center;">Day 45</td>
+                <td id="69" style="text-align: left;">At night, a <a style="color: greenyellow;" href="../Entities/entitieswiki.html#soltomia">Soltomia Entity</a> will spawn near the ATV in garage and begin it's cleaning animation. When the player walks into the main room of Main Base, a bright spark or flash can be seen for a split second. Then front entrance door will be broken or will not open fully. When the player walks into the garage, the <a style="color: greenyellow;" href="../Entities/entitieswiki.html#soltomia">Soltomia Entity</a> will quickly fly off and eventually disappear, leaving the sponge behind, and ending the event.</td>
+                <td id="70" style="text-align: center;">Day 45</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/54.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -345,9 +346,9 @@
                 </td>
             </tr>
             <tr>
-                <td id="arirstopitpls">Ariral Prank #2</td>
-                <td style="text-align: left;">An <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> will come over and break in, however in search of the Ariral gun it dropped earlier and once it has obtained it, it will quickly run away and eventually disappear.</td>
-                <td style="text-align: center;">Day 46-47</td>
+                <td id="arirstopitpls">ArirGun Repossession</td>
+                <td id="71" style="text-align: left;">An <a style="color: greenyellow;" href="../Entities/entitieswiki.html#ariral">Ariral Entity</a> will come over and break in, however in search of the Ariral gun it dropped earlier and once it has obtained it, it will quickly run away and eventually disappear.</td>
+                <td id="72" style="text-align: center;">Day 46-47</td>
                 <td>
                     <div class="container">
                         <img src="Images/StorymodeEvents/55.png" alt="VOTV Archive Image" onclick="openImage(this)">
@@ -359,5 +360,6 @@
     </div>
     <script src="../Scripts/basejs.js"></script>
     <script src="../Scripts/infobtnjs.js"></script>
+    <script src="../Scripts/searchbar.js"></script>
 </body>
 </html>
