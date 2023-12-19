@@ -84,7 +84,6 @@
             margin-left: 200px;
             position: relative;
             padding: 20px;
-            z-index: -1;
         }
         .image-zoom {
             position: fixed;
@@ -218,9 +217,9 @@
         }
         .search-container {
             display: inline-block;
-            position: absolute;
-            left: 160px;
-            bottom: 900px;
+            position: fixed;
+            left: 200px;
+            top: 20px;
         }
         .search-icon {
             width: 40px;
@@ -256,7 +255,6 @@
             background: transparent;
             border: 1px solid #ddd;
             display: none;
-            z-index: 1000;
             padding: 10px;
         }
             #searchResults p {
@@ -338,11 +336,6 @@
                 </div>
                 <img src="../Images/Promo.png" alt="Social Icon" width="30" height="30" style="border-radius: 50%">
                 Created by: <span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span>
-            </div>
-            <div class="search-container" style="z-index: 10000;">
-                <img src="../Images/SearchIcon.png" alt="Search Icon" class="search-icon">
-                <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
-                <div id="searchResults"></div>
             </div>
         </nav>
     </header>
