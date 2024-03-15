@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Voices of the Void Secrets Archive</title>
+    <style>
+        body {
+            background-image: url("Images/Home.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        hr {
+            height: 50px;
+            width: 3000px;
+            background-color: #333;
+            border: none;
+            margin: 5px;
+            border: 2px solid #000;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: Lato;
+            font-size: 80px;
+            padding: 20px;
+            margin: 0 auto;
+            background-color: black;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            color: thistle;
+            font-family: Times New Roman;
+            font-style: italic;
+            font-size: 37px;
+            background-color: black;
+            width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        h3 {
+            text-align: center;
+            color: blanchedalmond;
+            font-family: Arial;
+            font-size: 26px;
+            background-color: black;
+            width: 200px;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        h4 {
+            text-align: center;
+            color: grey;
+            font-family: Nunito Sans;
+            font-size: 18px;
+            background-color: black;
+            width: 400px;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 10px;
+        }
+        p {
+            color: white;
+            text-align: right;
+            font-family: Arial;
+            padding: 6px;
+            width: 1000px;
+            margin: 0 auto;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 0px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 999;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+            nav li a {
+                display: block;
+                font-family: Raleway;
+                border: 2px solid #000;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+            }
+                nav li a:hover {
+                    background-color: #111;
+                }
+        .generated-links {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: none;
+        }
+        .tab:hover .generated-links {
+            display: block;
+        }
+        .generated-links li {
+            margin-bottom: 5px;
+        }
+        .generated-links a {
+            display: block;
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+            background-color: #222;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+            .container img {
+                display: block;
+                max-width: 600px;
+                max-height: 500px;
+                cursor: pointer;
+                margin: 2px;
+                background-color: black;
+                border: 2px solid black;
+                padding: 1px;
+            }
+        #promoTab {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            font-size: 20px;
+        }
+        #socialLinks {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 10px;
+        }
+        #promoTab:hover #socialLinks {
+            display: flex;
+            background-color: #0c33ee;
+            color: darkorchid;
+        }
+        #socialLinks a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .search-container {
+            display: inline-block;
+            position: absolute;
+            left: 170px;
+            bottom: 900px;
+        }
+        .search-icon {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+        .search-bar {
+            width: 0;
+            padding: 5px 10px;
+            border: none;
+            background: transparent;
+            color: white;
+            transition: width 0.4s ease-in-out;
+            position: absolute;
+            top: 10px;
+            left: 45px;
+            border-bottom: 1px solid white;
+        }
+        .search-container:hover {
+            width: 220px
+        }
+        .search-container:hover .search-bar {
+            width: 150px; 
+        }
+        #searchResults {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            max-height: 600px;
+            max-width: 400px;
+            overflow-y: auto;
+            overflow-x: auto;
+            background: transparent;
+            border: 1px solid #ddd;
+            display: none;
+            z-index: 1000;
+            padding: 10px;
+        }
+            #searchResults p {
+                margin: 5px 0;
+                width: 600px;
+            }
+        .search-container:focus-within #searchResults {
+            display: block;
+        }
+        mark {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="tab">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="tab">
+                    <a href="Objects/objectswiki.html">Objects</a>
+                </li>
+                <li class="tab">
+                    <a href="Entities/entitieswiki.html">Entities</a>
+                </li>
+                <li class="tab">
+                    <a>Worlds</a>
+                    <ul class="generated-links">
+                        <li><a href="Worlds/testlevelswiki.html">Test Levels</a></li>
+                        <li><a href="Worlds/anomalyworldswiki.html">Anomaly Worlds</a></li>
+                        <li><a href="Worlds/otherworldswiki.html">Other Worlds</a></li>
+                    </ul>
+                </li>
+                <li class="tab">
+                    <a>Signals</a>
+                    <ul class="generated-links">
+                        <li><a href="Signals/deepspacesigswiki.html">Deep Space Signals</a></li>
+                        <li><a href="Signals/planetsigswiki.html">Planet Signals</a></li>
+                        <li><a href="Signals/specialsigswiki.html">Special Signals</a></li>
+                        <li><a href="Signals/siggensigswiki.html">Sig Gen Signals</a></li>
+                        <li><a href="Signals/othersigswiki.html">Other Signals</a></li>
+                    </ul>
+                </li>
+                <li class="tab">
+                    <a>Events</a>
+                    <ul class="generated-links">
+                        <li><a href="Events/storymodeeventswiki.html">Storymode Events</a></li>
+                        <li><a href="Events/ariralrepeventswiki.html">Ariral Rep Events</a></li>
+                        <li><a href="Events/triggerableeventswiki.html">Triggerable Events</a></li>
+                        <li><a href="Events/randomeventswiki.html">Random Events</a></li>
+                        <li><a href="Events/333ameventswiki.html">3:33 AM Events</a></li>
+                    </ul>
+                </li>
+                <li class="tab">
+                    <a href="Structures/structureswiki.html">Structures</a>
+                </li>
+                <li class="tab">
+                    <a href="ConsoleCommands/consolecommandswiki.html">Console Commands</a>
+                </li>
+                <li class="tab">
+                    <a href="Dreams/dreamswiki.html">Dreams</a>
+                </li>
+                <li class="tab">
+                    <a href="Achievements/achievementswiki.html">Achievements</a>
+                </li>
+                <li class="tab">
+                    <a href="GameEndings/endingswiki.html">Game Endings</a>
+                </li>
+                <li class="tab">
+                    <a href="InteractiveMap/interactablemap.html">Map of Everything</a>
+                </li>
+                <li class="tab">
+                    <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
+                </li>
+                <li class="tab">
+                    <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
+                </li>
+                <li class="tab">
+                    <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
+                </li>
+                <li class="tab">
+                    <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
+                </li>
+                <li class="tab">
+                    <a style="border: 1px solid #333; border-radius: 5px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"></a>
+                </li>
+                <li class="tab">
+                    <a style="color:red; font-size: 17px;" onmouseover="this.style.backgroundColor='#333';" onmouseout="this.style.backgroundColor='transparent';"><b>Last Updated: 0.7.0</b></a>
+                </li>
+            </ul>
+            <div id="promoTab">
+                <div id="socialLinks">
+                    <a href="https://github.com/SquareZeb" target="_blank">Github</a>
+                    <a href="https://www.youtube.com/channel/UCSPSGIg3wWMowzCL-1tc_Hg" target="_blank">Youtube</a>
+                    <a href="https://discord.gg/vzkMs8sH2z" target="_blank">Discord</a>
+                </div>
+                <img src="Images/Promo.png" alt="Social Icon" width="30" height="30" style="border-radius: 50%">
+                Created by: <span style="color: lawngreen;">Square</span><span style="color: aqua;">Zeb</span>
+            </div>
+        </nav>
+        <div class="search-container">
+            <img src="Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+            <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+            <div id="searchResults"></div>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Voices of the Void</h1>
+        <h2 style="text-align:center; font-style:italic;">All Hidden Secrets and Easter Eggs</h2>
+        <h3 style="text-align:center; font-style:oblique;">Description:</h3>
+        <p style="text-align:center;">Voices of the Void is a game created by mrdrnose. The game is inspired by Signal Simulator with the genre of a simulator game. </p>
+        <p style="text-align:center;">The game is mostly centered around a scientist, whom you assume the role as, who works in a remote research lab in the mountains of Switzerland tasked with gathering, processing, and saving signals from outer space. </p>
+        <p style="text-align:center;">When the signals are gathered and processed you can sell them to the other scientists at the facility for a currency known as credit in which you can buy upgrades and items from the shop. </p>
+        <p style="text-align:center;">In this game there are hundreds of signals and more are being added with every new update, these signals can range from normal celestial objects such as planets, stars, and etc, to rare objects such as satellites, unknown objects, and etc.</p>
+        <p style="text-align:center;">This game also features a large open world map with various structures, objects, and items scattered across it.</p>
+        <p style="text-align:center;">Some features, objects, and items that you may come across in this game are either references or literal crossovers from some other games that MrDrNose has made in the past. VOTV is set in the same universe as all of this.</p>
+        <p style="text-align:center;">Quite a bit of easter eggs that will be shown here in this archive will require "funny mode" to be turned on via settings, which can be done by solving a simple math equation following the order of operations</p>
+        <h3 style="text-align:center; font-style:oblique;">Aim of the forum:</h3>
+        <p style="text-align:center;">With all this, in this game lies tons of easter eggs and secrets that either lie within the game itself, lore, or game files. This archive and webpage is dedicated to archive and record every single hidden secret or easter egg that exists within VOTV (Voices of the Void for short).</p>
+        <h3 style="text-align:center; font-style:oblique;">Remember:</h3>
+        <p style="text-align:center;">Whatever content you see on this archive, regardless if its wrong or right, must be kept to you and yourself only. While this website contains spoilers for VOTV, I do not intend to leak anything or ruin the VOTV experience for anyone. As stated this only serves as an archive of all secrets within the game and nothing more.</p>
+        <h3 style="text-align:center; font-style:oblique;">Credits:</h3>
+        <p style="text-align:center;color:red;">Note: This game has not been fully released and there may be secrets and easter eggs that have not been discovered which may render this archive outdated.</p>
+        <p style="text-align:center;color:lawngreen;"><a href="https://mrdrnose.itch.io/votv">Voices of the Void:</a></p>
+        <p style="text-align:center;color:lawngreen;">If any new secret or hidden easter egg pops up you may contact me through <a href="https://discord.com/invite/uDhdXRATpP">here:</a></p>
+    </div>
+    <script src="Scripts/basejs.js"></script>
+    <script>
+        document.getElementById('searchBar').addEventListener('input', function () {
+            const searchText = this.value.toLowerCase().trim();
+            const searchResultsContainer = document.getElementById('searchResults');
+            searchResultsContainer.innerHTML = '';
+            if (searchText === '') {
+                return;
+            }
+            const predefinedTerms = [
+                { term: 'Worst Ending', link: 'GameEndings/endingswiki.html#worst' },
+                { term: 'Normal Ending', link: 'GameEndings/endingswiki.html#normal' },
+                { term: 'Secrety Rufus Ending', link: 'GameEndings/endingswiki.html#rufus' },
+                { term: 'Bad Sun Ending', link: 'GameEndings/endingswiki.html#badsun' },
+                { term: 'Launch tutorial level', link: 'Achievements/achievementswiki.html#1' },
+                { term: 'Demo player', link: 'Achievements/achievementswiki.html#2' },
+                { term: 'Sandbox ariral', link: 'Achievements/achievementswiki.html#saa' },
+                { term: 'Sandbox unlocked', link: 'Achievements/achievementswiki.html#3' },
+                { term: 'Demo completed', link: 'Achievements/achievementswiki.html#democ' },
+                { term: 'Counter', link: 'Achievements/achievementswiki.html#counter' },
+                { term: 'The hole', link: 'Achievements/achievementswiki.html#thehole' },
+                { term: 'Where do you think youre going?', link: 'Achievements/achievementswiki.html#4' },
+                { term: 'Mannequin dream', link: 'Achievements/achievementswiki.html#5' },
+                { term: 'Burger dream', link: 'Achievements/achievementswiki.html#6' },
+                { term: 'Worst ending', link: 'Achievements/achievementswiki.html#7' },
+                { term: 'Feed argemia', link: 'Achievements/achievementswiki.html#feedargem' },
+                { term: 'Super burger finder', link: 'Achievements/achievementswiki.html#8' },
+                { term: 'Miracle', link: 'Achievements/achievementswiki.html#9' },
+                { term: 'Bad sun', link: 'Achievements/achievementswiki.html#10' },
+                { term: 'You have seen everything', link: 'Achievements/achievementswiki.html#11' },
+                { term: 'Object in the woods', link: 'Achievements/achievementswiki.html#12' },
+                { term: 'Halloween begin', link: 'Achievements/achievementswiki.html#13' },
+                { term: 'Pre-alpha player', link: 'Achievements/achievementswiki.html#14' },
+                { term: 'WOO!', link: 'Achievements/achievementswiki.html#40' },
+                { term: 'Pre-alpha completed', link: 'Achievements/achievementswiki.html#42' },
+                { term: 'Argemia', link: 'Achievements/achievementswiki.html#15' },
+                { term: 'Burger?', link: 'Achievements/achievementswiki.html#16' },
+                { term: 'We are not alone', link: 'Achievements/achievementswiki.html#17' },
+                { term: 'Maxwell', link: 'ConsoleCommands/consolecommandswiki.html#max' },
+                { term: 'Argemwell', link: 'ConsoleCommands/consolecommandswiki.html#argem' },
+                { term: 'Alien', link: 'ConsoleCommands/consolecommandswiki.html#alien' },
+                { term: 'Execute_duende51', link: 'ConsoleCommands/consolecommandswiki.html#area51' },
+                { term: 'Ariral', link: 'ConsoleCommands/consolecommandswiki.html#1' },
+                { term: 'Ariral.pls', link: 'ConsoleCommands/consolecommandswiki.html#ariralpls' },
+                { term: 'Llama.saatana', link: 'ConsoleCommands/consolecommandswiki.html#2' },
+                { term: 'Gooseworx.rufus', link: 'ConsoleCommands/consolecommandswiki.html#rufus' },
+                { term: 'Gooseworx.thiccfus', link: 'ConsoleCommands/consolecommandswiki.html#thiccfus' },
+                { term: 'Rufus.fuckoff', link: 'ConsoleCommands/consolecommandswiki.html#rf' },
+                { term: 'Rep.debug', link: 'ConsoleCommands/consolecommandswiki.html#rd' },
+                { term: 'Boobs', link: 'ConsoleCommands/consolecommandswiki.html#3' },
+                { term: 'Ariral.boobs', link: 'ConsoleCommands/consolecommandswiki.html#4' },
+                { term: 'Sex', link: 'ConsoleCommands/consolecommandswiki.html#5' },
+                { term: 'Ariral.sex', link: 'ConsoleCommands/consolecommandswiki.html#6' },
+                { term: 'Get.vaccine', link: 'ConsoleCommands/consolecommandswiki.html#7' },
+                { term: 'Impulse', link: 'ConsoleCommands/consolecommandswiki.html#8' },
+                { term: 'Noclip', link: 'ConsoleCommands/consolecommandswiki.html#9' },
+                { term: 'Cake', link: 'ConsoleCommands/consolecommandswiki.html#10' },
+                { term: 'Sv.cheats', link: 'ConsoleCommands/consolecommandswiki.html#11' },
+                { term: 'Floppa', link: 'ConsoleCommands/consolecommandswiki.html#12' },
+                { term: 'Sogga', link: 'ConsoleCommands/consolecommandswiki.html#13' },
+                { term: 'Bingus', link: 'ConsoleCommands/consolecommandswiki.html#14' },
+                { term: 'Argemia', link: 'ConsoleCommands/consolecommandswiki.html#15' },
+                { term: 'Vargfren', link: 'ConsoleCommands/consolecommandswiki.html#16' },
+                { term: 'Amongus', link: 'ConsoleCommands/consolecommandswiki.html#17' },
+                { term: 'Sv.target alpha', link: 'ConsoleCommands/consolecommandswiki.html#18' },
+                { term: 'Sv.target chair', link: 'ConsoleCommands/consolecommandswiki.html#19' },
+                { term: 'Sv.target root', link: 'ConsoleCommands/consolecommandswiki.html#20' },
+                { term: 'Sv.target zulu', link: 'ConsoleCommands/consolecommandswiki.html#21' },
+                { term: 'Sv.target maxwell', link: 'ConsoleCommands/consolecommandswiki.html#22' },
+                { term: 'Tr.reset', link: 'ConsoleCommands/consolecommandswiki.html#23' },
+                { term: 'Burger Dream', link: 'Dreams/dreamswiki.html#burgerdream' },
+                { term: 'Mannequin Dream', link: 'Dreams/dreamswiki.html#manndream' },
+                { term: 'Corridor Dream', link: 'Dreams/dreamswiki.html#rundream' },
+                { term: 'Room Dream', link: 'Dreams/dreamswiki.html#1' },
+                { term: 'Fill Dream', link: 'Dreams/dreamswiki.html#drowndream' },
+                { term: 'Climb Dream', link: 'Dreams/dreamswiki.html#climbdream' },
+                { term: 'Jump Dream', link: 'Dreams/dreamswiki.html#jumpdream' },
+                { term: 'Furfur Dream', link: 'Dreams/dreamswiki.html#wendidream' },
+                { term: 'UFO Dream', link: 'Dreams/dreamswiki.html#ufodream' },
+                { term: 'Base Dream', link: 'Dreams/dreamswiki.html#2' },
+                { term: 'Antibreather', link: 'Entities/entitieswiki.html#ab' },
+                { term: 'Ariral', link: 'Entities/entitieswiki.html#ariral' },
+                { term: 'Furfur', link: 'Entities/entitieswiki.html#wendi' },
+                { term: 'Hanged Man', link: 'Entities/entitieswiki.html#hangedman' },
+                { term: 'Fossilhound', link: 'Entities/entitieswiki.html#fossil' },
+                { term: 'Insomnia Demon', link: 'Entities/entitieswiki.html#insomni' },
+                { term: 'Wolfgang', link: 'Entities/entitieswiki.html#wolfgang' },
+                { term: 'Rufus', link: 'Entities/entitieswiki.html#rufus' },
+                { term: 'Thiccfus', link: 'Entities/entitieswiki.html#thiccfus' },
+                { term: 'Fridge', link: 'Entities/entitieswiki.html#fridge' },
+                { term: 'Walking Tree', link: 'Entities/entitieswiki.html#walkingtree' },
+                { term: 'Live Erie', link: 'Entities/entitieswiki.html#liveerie' },
+                { term: 'Cockroach', link: 'Entities/entitieswiki.html#cockroach' },
+                { term: 'Wasps', link: 'Entities/entitieswiki.html#wasps' },
+                { term: 'Drone', link: 'Entities/entitieswiki.html#drone' },
+                { term: 'Fireflies', link: 'Entities/entitieswiki.html#fireflies' },
+                { term: 'Fish', link: 'Entities/entitieswiki.html#fish' },
+                { term: 'Kavotia', link: 'Entities/entitieswiki.html#kavotia' },
+                { term: 'Fire Wisp', link: 'Entities/entitieswiki.html#firewisp' },
+                { term: 'Red Wisp', link: 'Entities/entitieswiki.html#redwisp' },
+                { term: 'Green Wisp', link: 'Entities/entitieswiki.html#greenwisp' },
+                { term: 'Pink Wisp', link: 'Entities/entitieswiki.html#pinkwisp' },
+                { term: 'White Wisp', link: 'Entities/entitieswiki.html#whitewisp' },
+                { term: 'Black Wisp', link: 'Entities/entitieswiki.html#blackwisp' },
+                { term: 'Killer Wisp', link: 'Entities/entitieswiki.html#kwisp' },
+                { term: 'Orange Wisp', link: 'Entities/entitieswiki.html#ogwisp' },
+                { term: 'Purple Wisp', link: 'Entities/entitieswiki.html#purplewisp' },
+                { term: 'Shadow Man', link: 'Entities/entitieswiki.html#shadow' },
+                { term: 'Piramid', link: 'Entities/entitieswiki.html#piramid' },
+                { term: 'Jellyfish', link: 'Entities/entitieswiki.html#jellyfish' },
+                { term: 'Deer', link: 'Entities/entitieswiki.html#deer' },
+                { term: 'Undead Deer', link: 'Entities/entitieswiki.html#undeaddeer' },
+                { term: 'EG', link: 'Entities/entitieswiki.html#eg' },
+                { term: 'Soltomia', link: 'Entities/entitieswiki.html#soltomia' },
+                { term: 'Shit Duende', link: 'Entities/entitieswiki.html#shtduende' },
+                { term: 'Black Fogling', link: 'Entities/entitieswiki.html#blackfuzzy' },
+                { term: 'Tentacle Balls', link: 'Entities/entitieswiki.html#tentacle' },
+                { term: 'Evil Lambert', link: 'Entities/entitieswiki.html#lambert' },
+                { term: 'Moving Mannequin', link: 'Entities/entitieswiki.html#movingman' },
+                { term: 'Grey', link: 'Entities/entitieswiki.html#grey' },
+                { term: 'Tripod', link: 'Entities/entitieswiki.html#tripod' },
+                { term: 'Tanneul', link: 'Entities/entitieswiki.html#tan' },
+                { term: 'Spider Argemia', link: 'Entities/entitieswiki.html#spiderarg' },
+                { term: 'Bean Goombas', link: 'Entities/entitieswiki.html#beanie' },
+                { term: 'Dr Ballsack', link: 'Entities/entitieswiki.html#ballsack' },
+                { term: 'Stalker Plush', link: 'Entities/entitieswiki.html#cursedarg1' },
+                { term: 'Schizophreniac Plush', link: 'Entities/entitieswiki.html#cursedarg2' },
+                { term: 'Dream Mannequin', link: 'Entities/entitieswiki.html#dmann' },
+                { term: 'White Mist', link: 'Entities/entitieswiki.html#whitem' },
+                { term: 'Anomalous Water', link: 'Entities/entitieswiki.html#anomalwal' },
+                { term: 'Dream UFO', link: 'Entities/entitieswiki.html#dreamufo' },
+                { term: 'Dream Furfur', link: 'Entities/entitieswiki.html#dreamwendi' },
+                { term: 'Duende', link: 'Entities/entitieswiki.html#duende' },
+                { term: 'Gray UFO', link: 'Entities/entitieswiki.html#grayufo' },
+                { term: 'Green Alien', link: 'Entities/entitieswiki.html#greenie' },
+                { term: 'SKELEO', link: 'Entities/entitieswiki.html#skeleo' },
+                { term: 'BS', link: 'Entities/entitieswiki.html#bs' },
+                { term: 'Cursed Ariral Head', link: 'Entities/entitieswiki.html#headboi' },
+                { term: 'Cursed Spider', link: 'Entities/entitieswiki.html#spider' },
+                { term: 'Gray Boar', link: 'Entities/entitieswiki.html#grayboar' },
+                { term: 'Poolrooms Entity', link: 'Entities/entitieswiki.html#poolrooms' },
+                { term: 'Mountain Guys', link: 'Entities/entitieswiki.html#mountain' },
+                { term: 'Chimey', link: 'Entities/entitieswiki.html#chimey' },
+                { term: 'AB Plush Event', link: 'Events/333ameventswiki.html#abplush' },
+                { term: 'Furfur Toilet Event', link: 'Events/333ameventswiki.html#furfurtoilet' },
+                { term: 'Brickwall Event', link: 'Events/333ameventswiki.html#brickwall' },
+                { term: 'Ritual Warp Event', link: 'Events/333ameventswiki.html#ritualwarp' },
+                { term: 'Furfur Meat Locker Event', link: 'Events/333ameventswiki.html#fml' },
+                { term: 'Black Fog Event', link: 'Events/randomeventswiki.html#blackfog' },
+                { term: 'Red Sky Event', link: 'Events/randomeventswiki.html#redsky' },
+                { term: 'Gears Event', link: 'Events/randomeventswiki.html#gears' },
+                { term: 'Ghost Graffiti Event', link: 'Events/randomeventswiki.html#ghost' },
+                { term: 'Chair Skeleton Event', link: 'Events/randomeventswiki.html#chair' },
+                { term: 'Jellyfish Event', link: 'Events/randomeventswiki.html#jellyfish' },
+                { term: 'Roar Event', link: 'Events/randomeventswiki.html#roar' },
+                { term: 'Possessed Kerfus Event', link: 'Events/randomeventswiki.html#possessedkerfus' },
+                { term: 'Possessed TV Event', link: 'Events/randomeventswiki.html#possessedtv' },
+                { term: 'Light Tube Event', link: 'Events/randomeventswiki.html#lighttube' },
+                { term: 'Pink Wisps Event', link: 'Events/randomeventswiki.html#pinkwisps' },
+                { term: 'Flesh Rain Event', link: 'Events/randomeventswiki.html#fleshrain' },
+                { term: 'Mannequin Disappearance Event', link: 'Events/randomeventswiki.html#mannequindisappearance' },
+                { term: 'Mannequin Moving Event', link: 'Events/randomeventswiki.html#mannequinmoving' },
+                { term: 'Mannequin Reorganize Event', link: 'Events/randomeventswiki.html#mannequinreorganize' },
+                { term: 'Blue Light Prank Event', link: 'Events/randomeventswiki.html#bluelight' },
+                { term: 'Broken Vent Event', link: 'Events/randomeventswiki.html#brokenvent' },
+                { term: 'Password Attempt Event', link: 'Events/randomeventswiki.html#passwordattempt' },
+                { term: 'Enas Kindness Event', link: 'Events / randomeventswiki.html#enakindness' },
+                { term: 'Misplaced Sushi Event', link: 'Events/randomeventswiki.html#misplacedsushi' },
+                { term: 'Radiotower Disappearance Event', link: 'Events/randomeventswiki.html#radiotower' },
+                { term: 'Grunge Oils Event', link: 'Events/randomeventswiki.html#grungeoil' },
+                { term: 'Security Breach', link: 'Events/randomeventswiki.html#security' },
+                { term: 'Furfur Locker Head', link: 'Events/randomeventswiki.html#furfur' },
+                { term: 'Shooting Stars Event', link: 'Events/storymodeeventswiki.html#shootingstars' },
+                { term: 'Poweroff Event', link: 'Events/storymodeeventswiki.html#poweroff' },
+                { term: 'Vent Crawler Event', link: 'Events/storymodeeventswiki.html#ventcrawler' },
+                { term: 'Ariral Picnic Event', link: 'Events/storymodeeventswiki.html#picnic' },
+                { term: 'Ariral Ship Scan Event', link: 'Events/storymodeeventswiki.html#asse' },
+                { term: 'Vent Knocker Event', link: 'Events/storymodeeventswiki.html#ventknocker' },
+                { term: 'Ariral Ship Event', link: 'Events/storymodeeventswiki.html#ariralshipevent' },
+                { term: 'Ariral Treehouse Event', link: 'Events/storymodeeventswiki.html#ariraltreehouse' },
+                { term: 'Alien Cutout Event', link: 'Events/storymodeeventswiki.html#aliencutout' },
+                { term: 'Brownie Trail Event', link: 'Events/storymodeeventswiki.html#bte' },
+                { term: 'Dropped ArirGun Event', link: 'Events/storymodeeventswiki.html#droppedarir' },
+                { term: 'Obelisk Event', link: 'Events/storymodeeventswiki.html#obelisk' },
+                { term: 'Sun Blackout Event', link: 'Events/storymodeeventswiki.html#sunblackout' },
+                { term: 'Looker Event', link: 'Events/storymodeeventswiki.html#looker' },
+                { term: 'Piramid Event', link: 'Events/storymodeeventswiki.html#piramid' },
+                { term: 'Rozital Patrol Event', link: 'Events/storymodeeventswiki.html#rpe' },
+                { term: 'Soltomia Cleaning Event', link: 'Events/storymodeeventswiki.html#sce' },
+                { term: 'RozitBorg Event', link: 'Events/storymodeeventswiki.html#rozitborg' },
+                { term: 'Rozital Hole Event', link: 'Events/storymodeeventswiki.html#rhe' },
+                { term: 'Grays Dumping Event', link: 'Events/storymodeeventswiki.html#gde' },
+                { term: 'ArirGun Repossession', link: 'Events/storymodeeventswiki.html#arirstopitpls' },
+                { term: 'Rozital Ship Event', link: 'Events/triggerableeventswiki.html#rozship' },
+                { term: 'Ship Engine Event', link: 'Events/triggerableeventswiki.html#shipengine' },
+                { term: 'Hell Opening Event', link: 'Events/triggerableeventswiki.html#hellopen' },
+                { term: 'The Evil Event', link: 'Events/triggerableeventswiki.html#evil' },
+                { term: 'Bad Sun Event', link: 'Events/triggerableeventswiki.html#badsun' },
+                { term: 'Blood Skeleton Event', link: 'Events/triggerableeventswiki.html#bse' },
+                { term: 'Undead Deer Event', link: 'Events/triggerableeventswiki.html#undeaddeer' },
+                { term: 'Shorts Arir Tp Event', link: 'Events/triggerableeventswiki.html#shortarirtp' },
+                { term: 'Virus Event', link: 'Events/triggerableeventswiki.html#virus' },
+                { term: 'Shit Duende Event', link: 'Events/triggerableeventswiki.html#shtduende' },
+                { term: 'Howl Event', link: 'Events/triggerableeventswiki.html#howl' },
+                { term: 'Abandoned Well Sleep Event', link: 'Events/triggerableeventswiki.html#well' },
+                { term: 'Ritual Event', link: 'Events/triggerableeventswiki.html#ritual' },
+                { term: 'Log Event', link: 'Events/triggerableeventswiki.html#logevent' },
+                { term: 'Halloween Event', link: 'Events/triggerableeventswiki.html#halloween' },
+                { term: 'Tardis Event', link: 'Events/triggerableeventswiki.html#tardis' },
+                { term: 'Wolfgang Awakening Event', link: 'Events/triggerableeventswiki.html#wolfgang' },
+                { term: 'Furfur Plush Event', link: 'Events/triggerableeventswiki.html#furfurplush' },
+                { term: 'Paper Alien Car Event', link: 'Events/ariralrepeventswiki.html#paperaliencar' },
+                { term: 'Paper Alien Catapult Event', link: 'Events/ariralrepeventswiki.html#paperaliencatapult' },
+                { term: 'Paper Alien Arrival Event', link: 'Events/ariralrepeventswiki.html#paperalienarrival' },
+                { term: 'Trasher Event', link: 'Events/ariralrepeventswiki.html#trasher' },
+                { term: 'Ariral Stalker Event', link: 'Events/ariralrepeventswiki.html#stalker' },
+                { term: 'Rock Thrower Event', link: 'Events/ariralrepeventswiki.html#rockthrower' },
+                { term: 'Ariral Anti-Grav Event', link: 'Events/ariralrepeventswiki.html#ariralanti' },
+                { term: 'Exploding Cookies Event', link: 'Events/ariralrepeventswiki.html#explodingcookies' },
+                { term: 'Ariral Vent Break-In Event', link: 'Events/ariralrepeventswiki.html#ariralvent' },
+                { term: 'Tacks Event', link: 'Events/ariralrepeventswiki.html#tacks' },
+                { term: 'ATV Boobytrap Event', link: 'Events/ariralrepeventswiki.html#boobytrap' },
+                { term: 'Fake Drives Event', link: 'Events/ariralrepeventswiki.html#fakedrives' },
+                { term: 'Bed Prank Event', link: 'Events/ariralrepeventswiki.html#bedprank' },
+                { term: 'Gascan Prank Event', link: 'Events/ariralrepeventswiki.html#gascanprank' },
+                { term: 'Ariral Ship Tower Event', link: 'Events/ariralrepeventswiki.html#arirtower' },
+                { term: 'Ding Dong Ditch Event', link: 'Events/ariralrepeventswiki.html#dingdong' },
+                { term: 'Weird Chocolate Event', link: 'Events/ariralrepeventswiki.html#weirdchoco' },
+                { term: 'Ariral Graffiti Event', link: 'Events/ariralrepeventswiki.html#arirgraffiti' },
+                { term: 'Cookies Event', link: 'Events/ariralrepeventswiki.html#cookies' },
+                { term: 'Ariral Vaccine Event', link: 'Events/ariralrepeventswiki.html#vaccine' },
+                { term: 'Yogurt Ariral Event', link: 'Events/ariralrepeventswiki.html#yogurt' },
+                { term: 'Treehouse Teleport Event', link: 'Events/ariralrepeventswiki.html#treehouse' },
+                { term: 'Ariral ATV Repair Event', link: 'Events/ariralrepeventswiki.html#atvrepair' },
+                { term: 'Ariral ATV Fuelup Event', link: 'Events/ariralrepeventswiki.html#atvfuel' },
+                { term: 'Ship Engine', link: 'Objects/objectswiki.html#shipengine' },
+                { term: 'SCP-432', link: 'Objects/objectswiki.html#scp432' },
+                { term: 'Basalt Pillars', link: 'Objects/objectswiki.html#basalt' },
+                { term: 'Invisible Black Rock', link: 'Objects/objectswiki.html#blackrock' },
+                { term: 'Tombstone', link: 'Objects/objectswiki.html#tombstone' },
+                { term: 'Crosses', link: 'Objects/objectswiki.html#crosses' },
+                { term: 'Maxwell', link: 'Objects/objectswiki.html#max' },
+                { term: 'Argemwell', link: 'Objects/objectswiki.html#argem' },
+                { term: 'Broomba', link: 'Objects/objectswiki.html#broomba' },
+                { term: 'Physics Gun', link: 'Objects/objectswiki.html#physicsgun' },
+                { term: 'AB friend', link: 'Objects/objectswiki.html#abfriend' },
+                { term: 'Antibreather Plush', link: 'Objects/objectswiki.html#abplush' },
+                { term: 'Unnamed Rock', link: 'Objects/objectswiki.html#unnamedrock' },
+                { term: 'Argemia Plush', link: 'Objects/objectswiki.html#argplush' },
+                { term: 'Nuclear Plush', link: 'Objects/objectswiki.html#nuclear' },
+                { term: 'Secret Argemia Plushes', link: 'Objects/objectswiki.html#secretargs' },
+                { term: 'Runes', link: 'Objects/objectswiki.html#rune' },
+                { term: 'Rune Slabs', link: 'Objects/objectswiki.html#runeslab' },
+                { term: 'Lambert', link: 'Objects/objectswiki.html#lambert' },
+                { term: 'Brick Wall', link: 'Objects/objectswiki.html#brickwall' },
+                { term: 'White Door', link: 'Objects/objectswiki.html#whited' },
+                { term: 'Rorschach Test', link: 'Objects/objectswiki.html#ror' },
+                { term: 'Thiccfus Plush', link: 'Objects/objectswiki.html#tp' },
+                { term: 'Erie Plush', link: 'Objects/objectswiki.html#erieplush' },
+                { term: 'Omega Kerfurs', link: 'Objects/objectswiki.html#omegakerfur' },
+                { term: 'Lifecrystal', link: 'Objects/objectswiki.html#lifecrystal' },
+                { term: 'Green Campfire', link: 'Objects/objectswiki.html#greenc' },
+                { term: 'Alien Thing', link: 'Objects/objectswiki.html#alienthingy' },
+                { term: 'Treasure Chest', link: 'Objects/objectswiki.html#trchest' },
+                { term: 'Bone Man', link: 'Objects/objectswiki.html#boneman' },
+                { term: 'Furfur Paltar Pieces', link: 'Objects/objectswiki.html#furfurpaltar' },
+                { term: 'Furfur Plush', link: 'Objects/objectswiki.html#furfurplush' },
+                { term: 'Hairy', link: 'Signals/deepspacesigswiki.html#1' },
+                { term: 'Wormy', link: 'Signals/deepspacesigswiki.html#2' },
+                { term: 'Mettus', link: 'Signals/deepspacesigswiki.html#3' },
+                { term: 'Wooshes', link: 'Signals/deepspacesigswiki.html#4' },
+                { term: 'Dnoose', link: 'Signals/deepspacesigswiki.html#5' },
+                { term: 'Gargle', link: 'Signals/deepspacesigswiki.html#6' },
+                { term: 'Poem', link: 'Signals/deepspacesigswiki.html#7' },
+                { term: 'Shiffler1', link: 'Signals/deepspacesigswiki.html#8' },
+                { term: 'Birbies', link: 'Signals/deepspacesigswiki.html#9' },
+                { term: 'Basser1', link: 'Signals/deepspacesigswiki.html#10' },
+                { term: 'Nev1', link: 'Signals/deepspacesigswiki.html#11' },
+                { term: 'Flesh', link: 'Signals/deepspacesigswiki.html#12' },
+                { term: 'Crisps', link: 'Signals/deepspacesigswiki.html#13' },
+                { term: 'Booer', link: 'Signals/deepspacesigswiki.html#14' },
+                { term: 'Fesh', link: 'Signals/deepspacesigswiki.html#15' },
+                { term: 'Eeh', link: 'Signals/deepspacesigswiki.html#16' },
+                { term: 'Woowoo', link: 'Signals/deepspacesigswiki.html#17' },
+                { term: 'Faces', link: 'Signals/deepspacesigswiki.html#18' },
+                { term: 'Ha', link: 'Signals/deepspacesigswiki.html#19' },
+                { term: 'Lizard', link: 'Signals/deepspacesigswiki.html#20' },
+                { term: 'Spooky', link: 'Signals/deepspacesigswiki.html#21' },
+                { term: 'Roz0', link: 'Signals/deepspacesigswiki.html#22' },
+                { term: 'Zzzuu', link: 'Signals/deepspacesigswiki.html#23' },
+                { term: 'Shots', link: 'Signals/deepspacesigswiki.html#24' },
+                { term: 'Waves', link: 'Signals/deepspacesigswiki.html#25' },
+                { term: 'Wubbes', link: 'Signals/deepspacesigswiki.html#26' },
+                { term: 'Seeker', link: 'Signals/deepspacesigswiki.html#27' },
+                { term: 'Hisses', link: 'Signals/deepspacesigswiki.html#28' },
+                { term: 'Monty', link: 'Signals/deepspacesigswiki.html#29' },
+                { term: 'Curiosity', link: 'Signals/deepspacesigswiki.html#30' },
+                { term: 'Subplanet', link: 'Signals/othersigswiki.html#1' },
+                { term: 'White Dwarf', link: 'Signals/othersigswiki.html#2' },
+                { term: 'Red Dwarf', link: 'Signals/othersigswiki.html#3' },
+                { term: 'Oumuamua', link: 'Signals/othersigswiki.html#4' },
+                { term: 'Caliro', link: 'Signals/othersigswiki.html#5' },
+                { term: 'Brown Dwarf', link: 'Signals/othersigswiki.html#6' },
+                { term: 'Star', link: 'Signals/othersigswiki.html#7' },
+                { term: 'Amogus', link: 'Signals/othersigswiki.html#8' },
+                { term: 'Blackhole', link: 'Signals/othersigswiki.html#9' },
+                { term: 'Red Giant', link: 'Signals/othersigswiki.html#10' },
+                { term: 'Comet', link: 'Signals/othersigswiki.html#11' },
+                { term: 'Asteroid', link: 'Signals/othersigswiki.html#12' },
+                { term: 'AsteroidM', link: 'Signals/othersigswiki.html#13' },
+                { term: 'AsteroidXS', link: 'Signals/othersigswiki.html#14' },
+                { term: 'AsteroidL', link: 'Signals/othersigswiki.html#15' },
+                { term: 'AsteroidXL', link: 'Signals/othersigswiki.html#16' },
+                { term: 'AsteroidS', link: 'Signals/othersigswiki.html#17' },
+                { term: 'AsteroidXXL', link: 'Signals/othersigswiki.html#18' },
+                { term: 'Frequency Test', link: 'Signals/othersigswiki.html#19' },
+                { term: 'Test0', link: 'Signals/othersigswiki.html#20' },
+                { term: 'Test0 (Processed)', link: 'Signals/othersigswiki.html#21' },
+                { term: 'Test', link: 'Signals/othersigswiki.html#22' },
+                { term: 'Garb 5', link: 'Signals/othersigswiki.html#23' },
+                { term: 'Garb 4', link: 'Signals/othersigswiki.html#24' },
+                { term: 'Garb 3', link: 'Signals/othersigswiki.html#25' },
+                { term: 'Garb 2', link: 'Signals/othersigswiki.html#26' },
+                { term: 'Garb 1', link: 'Signals/othersigswiki.html#27' },
+                { term: 'Garb', link: 'Signals/othersigswiki.html#28' },
+                { term: 'Neutron 0', link: 'Signals/othersigswiki.html#29' },
+                { term: 'Neutron 1', link: 'Signals/othersigswiki.html#30' },
+                { term: 'Neutron 2', link: 'Signals/othersigswiki.html#31' },
+                { term: 'Neutron 3', link: 'Signals/othersigswiki.html#32' },
+                { term: 'Neutron 4', link: 'Signals/othersigswiki.html#33' },
+                { term: 'Neutron 5', link: 'othersigswiki.html#34' },
+                { term: 'Neutron 6', link: 'Signals/othersigswiki.html#35' },
+                { term: 'Neutron 7', link: 'Signals/othersigswiki.html#36' },
+                { term: 'Neutron 8', link: 'Signals/othersigswiki.html#37' },
+                { term: 'Whited_1', link: 'Signals/othersigswiki.html#38' },
+                { term: 'Whited_2', link: 'Signals/othersigswiki.html#39' },
+                { term: 'Whited_3', link: 'Signals/othersigswiki.html#40' },
+                { term: 'Whited_4', link: 'Signals/othersigswiki.html#41' },
+                { term: 'Whited_5', link: 'Signals/othersigswiki.html#42' },
+                { term: 'Whited_6', link: 'Signals/othersigswiki.html#43' },
+                { term: 'Whited_7', link: 'Signals/othersigswiki.html#44' },
+                { term: 'Virus', link: 'Signals/othersigswiki.html#virus' },
+                { term: 'SpectreTest', link: 'Signals/othersigswiki.html#45' },
+                { term: 'SpectreTest_0', link: 'Signals/othersigswiki.html#46' },
+                { term: 'SpectreTest_1', link: 'Signals/othersigswiki.html#47' },
+                { term: 'Ovalius', link: 'Signals/othersigswiki.html#48' },
+                { term: 'Mreows', link: 'Signals/othersigswiki.html#49' },
+                { term: 'Corpse2', link: 'Signals/othersigswiki.html#50' },
+                { term: 'Sighisser', link: 'Signals/othersigswiki.html#51' },
+                { term: 'Venus', link: 'Signals/planetsigswiki.html#1' },
+                { term: 'Neptune', link: 'Signals/planetsigswiki.html#2' },
+                { term: 'Iapetus', link: 'Signals/planetsigswiki.html#3' },
+                { term: 'Iapetus 0', link: 'Signals/planetsigswiki.html#4' },
+                { term: 'Ceres 0', link: 'Signals/planetsigswiki.html#5' },
+                { term: 'Ceres', link: 'Signals/planetsigswiki.html#6' },
+                { term: 'Jupiter', link: 'Signals/planetsigswiki.html#7' },
+                { term: 'Marsbday', link: 'Signals/planetsigswiki.html#8' },
+                { term: 'Retroplanet', link: 'Signals/planetsigswiki.html#9' },
+                { term: 'Enceladus', link: 'Signals/planetsigswiki.html#10' },
+                { term: 'Fard', link: 'Signals/planetsigswiki.html#11' },
+                { term: 'Eris', link: 'Signals/planetsigswiki.html#12' },
+                { term: 'Dione', link: 'Signals/planetsigswiki.html#13' },
+                { term: 'Mercury', link: 'Signals/planetsigswiki.html#14' },
+                { term: 'Bennu', link: 'Signals/planetsigswiki.html#15' },
+                { term: 'Saturn', link: 'Signals/planetsigswiki.html#16' },
+                { term: 'Uranus', link: 'Signals/planetsigswiki.html#17' },
+                { term: 'Mars', link: 'Signals/planetsigswiki.html#18' },
+                { term: 'Hilero', link: 'Signals/planetsigswiki.html#19' },
+                { term: 'Treasure Planet', link: 'Signals/planetsigswiki.html#20' },
+                { term: 'Vesta', link: 'Signals/planetsigswiki.html#21' },
+                { term: 'Amazur', link: 'Signals/planetsigswiki.html#22' },
+                { term: 'Rhea', link: 'Signals/planetsigswiki.html#23' },
+                { term: 'Rhea 0', link: 'Signals/planetsigswiki.html#24' },
+                { term: 'Makemake', link: 'Signals/planetsigswiki.html#25' },
+                { term: 'Iris', link: 'Signals/planetsigswiki.html#26' },
+                { term: 'Vion', link: 'Signals/planetsigswiki.html#27' },
+                { term: 'Aburan', link: 'Signals/planetsigswiki.html#28' },
+                { term: 'Mimas', link: 'Signals/planetsigswiki.html#29' },
+                { term: 'Io', link: 'Signals/planetsigswiki.html#30' },
+                { term: 'Ironlung', link: 'Signals/planetsigswiki.html#31' },
+                { term: 'Mardad', link: 'Signals/planetsigswiki.html#32' },
+                { term: 'Oscular', link: 'Signals/planetsigswiki.html#33' },
+                { term: 'Europa', link: 'Signals/planetsigswiki.html#34' },
+                { term: 'Moon', link: 'Signals/planetsigswiki.html#35' },
+                { term: 'Blance', link: 'Signals/planetsigswiki.html#36' },
+                { term: 'Phobos', link: 'Signals/planetsigswiki.html#37' },
+                { term: 'Friante', link: 'Signals/planetsigswiki.html#38' },
+                { term: 'Tethys', link: 'Signals/planetsigswiki.html#39' },
+                { term: 'SigGen6_1', link: 'Signals/siggensigswiki.html#1' },
+                { term: 'SigGen6_2', link: 'Signals/siggensigswiki.html#2' },
+                { term: 'SigGen6_3', link: 'Signals/siggensigswiki.html#3' },
+                { term: 'SigGen6_4', link: 'Signals/siggensigswiki.html#4' },
+                { term: 'SigGen6_5', link: 'Signals/siggensigswiki.html#5' },
+                { term: 'SigGen6_6', link: 'Signals/siggensigswiki.html#6' },
+                { term: 'SigGen6_7', link: 'Signals/siggensigswiki.html#7' },
+                { term: 'SigGen6_8', link: 'Signals/siggensigswiki.html#8' },
+                { term: 'SigGen6_9', link: 'Signals/siggensigswiki.html#9' },
+                { term: 'SigGen6_10', link: 'Signals/siggensigswiki.html#10' },
+                { term: 'SigGen6_11', link: 'Signals/siggensigswiki.html#11' },
+                { term: 'SigGen6_12', link: 'Signals/siggensigswiki.html#12' },
+                { term: 'SigGen6_13', link: 'Signals/siggensigswiki.html#13' },
+                { term: 'SigGen6_14', link: 'Signals/siggensigswiki.html#14' },
+                { term: 'SigGen6_15', link: 'Signals/siggensigswiki.html#15' },
+                { term: 'SigGen6_16', link: 'Signals/siggensigswiki.html#16' },
+                { term: 'SigGen6_17', link: 'Signals/siggensigswiki.html#17' },
+                { term: 'Arir Sat_0', link: 'Signals/siggensigswiki.html#18' },
+                { term: 'SigGen6_19', link: 'Signals/siggensigswiki.html#19' },
+                { term: 'SigGen6_20', link: 'Signals/siggensigswiki.html#20' },
+                { term: 'SigGen6_21', link: 'Signals/siggensigswiki.html#21' },
+                { term: 'SigGen6_22', link: 'Signals/siggensigswiki.html#22' },
+                { term: 'SigGen6_23', link: 'Signals/siggensigswiki.html#23' },
+                { term: 'SigGen6_24', link: 'Signals/siggensigswiki.html#24' },
+                { term: 'SigGen602_1', link: 'Signals/siggensigswiki.html#25' },
+                { term: 'SigGen602_2', link: 'Signals/siggensigswiki.html#26' },
+                { term: 'SigGen602_3', link: 'Signals/siggensigswiki.html#27' },
+                { term: 'SigGen602_4', link: 'Signals/siggensigswiki.html#28' },
+                { term: 'SigGen602_5', link: 'Signals/siggensigswiki.html#29' },
+                { term: 'SigGen602_6', link: 'Signals/siggensigswiki.html#30' },
+                { term: 'SigGen602_7', link: 'Signals/siggensigswiki.html#31' },
+                { term: 'Arir Sat_1', link: 'Signals/siggensigswiki.html#32' },
+                { term: 'Arir Sat_2', link: 'Signals/siggensigswiki.html#33' },
+                { term: 'SigGen602_10', link: 'Signals/siggensigswiki.html#34' },
+                { term: 'SigGen602_11', link: 'Signals/siggensigswiki.html#35' },
+                { term: 'SigGen602_12', link: 'Signals/siggensigswiki.html#36' },
+                { term: 'SigGen7_1', link: 'Signals/siggensigswiki.html#37' },
+                { term: 'SigGen7_2', link: 'Signals/siggensigswiki.html#38' },
+                { term: 'SigGen7_3', link: 'Signals/siggensigswiki.html#39' },
+                { term: 'SigGen7_4', link: 'Signals/siggensigswiki.html#40' },
+                { term: 'SigGen7_5', link: 'Signals/siggensigswiki.html#41' },
+                { term: 'SigGen7_6', link: 'Signals/siggensigswiki.html#42' },
+                { term: 'SigGen7_7', link: 'Signals/siggensigswiki.html#43' },
+                { term: 'SigGen7_8', link: 'Signals/siggensigswiki.html#44' },
+                { term: 'SigGen7_9', link: 'Signals/siggensigswiki.html#45' },
+                { term: 'SigGen7_10', link: 'Signals/siggensigswiki.html#46' },
+                { term: 'SigGen7_11', link: 'Signals/siggensigswiki.html#47' },
+                { term: 'SigGen7_12', link: 'Signals/siggensigswiki.html#48' },
+                { term: 'SigGen7_13', link: 'Signals/siggensigswiki.html#49' },
+                { term: 'SigGen7_14', link: 'Signals/siggensigswiki.html#50' },
+                { term: 'SigGen7_15', link: 'Signals/siggensigswiki.html#51' },
+                { term: 'SigGen7_16', link: 'Signals/siggensigswiki.html#52' },
+                { term: 'SigGen7_17', link: 'Signals/siggensigswiki.html#53' },
+                { term: 'SigGen7_18', link: 'Signals/siggensigswiki.html#54' },
+                { term: 'SigGen7_19', link: 'Signals/siggensigswiki.html#55' },
+                { term: 'Lifecrystal', link: 'Signals/specialsigswiki.html#lifecrystal' },
+                { term: 'Arirs Talking', link: 'Signals/specialsigswiki.html#1' },
+                { term: 'Arirs Msg', link: 'Signals/specialsigswiki.html#2' },
+                { term: 'Pizzabreather', link: 'Signals/specialsigswiki.html#3' },
+                { term: 'Calm4', link: 'Signals/specialsigswiki.html#4' },
+                { term: 'Wh', link: 'Signals/specialsigswiki.html#5' },
+                { term: 'Piramid', link: 'Signals/specialsigswiki.html#6' },
+                { term: 'UFO', link: 'Signals/specialsigswiki.html#7' },
+                { term: 'Shit Duende', link: 'Signals/specialsigswiki.html#shtduende' },
+                { term: 'Evil', link: 'Signals/specialsigswiki.html#8' },
+                { term: 'ShortsArirTP', link: 'Signals/specialsigswiki.html#shortarirtp' },
+                { term: 'Varg', link: 'Signals/specialsigswiki.html#9' },
+                { term: 'Evil (Processed)', link: 'Signals/specialsigswiki.html#evil' },
+                { term: 'TamalanFlag', link: 'Signals/specialsigswiki.html#10' },
+                { term: 'Tamalan', link: 'Signals/specialsigswiki.html#11' },
+                { term: 'Ironstar', link: 'Signals/specialsigswiki.html#12' },
+                { term: 'Sat1_0', link: 'Signals/specialsigswiki.html#13' },
+                { term: 'Cosmic Call', link: 'Signals/specialsigswiki.html#14' },
+                { term: 'ISNCHYS', link: 'Signals/specialsigswiki.html#15' },
+                { term: 'Peace', link: 'Signals/specialsigswiki.html#16' },
+                { term: 'HCWCP', link: 'Signals/specialsigswiki.html#17' },
+                { term: 'Process', link: 'Signals/specialsigswiki.html#18' },
+                { term: 'Coffin', link: 'Signals/specialsigswiki.html#19' },
+                { term: 'PlanetExp', link: 'Signals/specialsigswiki.html#20' },
+                { term: 'Pizzabreather (Processed)', link: 'Signals/specialsigswiki.html#21' },
+                { term: 'Cringecomp', link: 'Signals/specialsigswiki.html#22' },
+                { term: 'Arir Angry', link: 'Signals/specialsigswiki.html#23' },
+                { term: 'Sto8122', link: 'Signals/specialsigswiki.html#24' },
+                { term: 'Spaace', link: 'Signals/specialsigswiki.html#25' },
+                { term: 'Looker Window', link: 'Signals/specialsigswiki.html#looker_window' },
+                { term: 'Looker Vent', link: 'Signals/specialsigswiki.html#looker_vent' },
+                { term: 'Looker Behind', link: 'Signals/specialsigswiki.html#looker_behind' },
+                { term: 'Looker Locker', link: 'Signals/specialsigswiki.html#looker_locker' },
+                { term: 'Looker Sky', link: 'Signals/specialsigswiki.html#looker_sky' },
+                { term: 'Looker Basement', link: 'Signals/specialsigswiki.html#30' },
+                { term: 'Looker Gener', link: 'Signals/specialsigswiki.html#31' },
+                { term: 'Looker Forest', link: 'Signals/specialsigswiki.html#32' },
+                { term: 'Looker Stone', link: 'Signals/specialsigswiki.html#33' },
+                { term: 'Looker Entrance', link: 'Signals/specialsigswiki.html#34' },
+                { term: 'Looker Bathroom', link: 'Signals/specialsigswiki.html#35' },
+                { term: 'Alk', link: 'Signals/specialsigswiki.html#36' },
+                { term: 'Deer', link: 'Signals/specialsigswiki.html#deer' },
+                { term: 'Sums2', link: 'Signals/specialsigswiki.html#37' },
+                { term: 'Tan', link: 'Signals/specialsigswiki.html#38' },
+                { term: 'Earth Tst', link: 'Signals/specialsigswiki.html#39' },
+                { term: 'Earth Tst2', link: 'Signals/specialsigswiki.html#40' },
+                { term: 'Earth Tst2_2', link: 'Signals/specialsigswiki.html#41' },
+                { term: 'Poper3', link: 'Signals/specialsigswiki.html#42' },
+                { term: 'Poper2', link: 'Signals/specialsigswiki.html#43' },
+                { term: 'Poper1', link: 'Signals/specialsigswiki.html#44' },
+                { term: 'Rollerer', link: 'Signals/specialsigswiki.html#45' },
+                { term: 'Rolle2', link: 'Signals/specialsigswiki.html#46' },
+                { term: 'Skeleton', link: 'Signals/specialsigswiki.html#47' },
+                { term: 'Rir1', link: 'Signals/specialsigswiki.html#48' },
+                { term: 'Cbtsts', link: 'Signals/specialsigswiki.html#49' },
+                { term: 'Funny', link: 'Signals/specialsigswiki.html#50' },
+                { term: 'Nolisten', link: 'Signals/specialsigswiki.html#51' },
+                { term: 'Bcpu', link: 'Signals/specialsigswiki.html#52' },
+                { term: 'Tardis', link: 'Signals/specialsigswiki.html#tardis' },
+                { term: 'Bridge', link: 'Structures/structureswiki.html#bridge' },
+                { term: 'Powerline Pole', link: 'Structures/structureswiki.html#powerline' },
+                { term: 'Satellite Dish', link: 'Structures/structureswiki.html#satellitedish' },
+                { term: 'Transformer', link: 'Structures/structureswiki.html#transformer' },
+                { term: 'Fence', link: 'Structures/structureswiki.html#fence' },
+                { term: 'Firetower Outpost', link: 'Structures/structureswiki.html#firetower' },
+                { term: 'Radio Tower', link: 'Structures/structureswiki.html#radiotower' },
+                { term: 'Event Pole', link: 'Structures/structureswiki.html#eventpole' },
+                { term: 'Bunker', link: 'Structures/structureswiki.html#bunker' },
+                { term: 'Main Base', link: 'Structures/structureswiki.html#mainbase' },
+                { term: 'Bomb Shelter', link: 'Structures/structureswiki.html#bs' },
+                { term: 'Sewer', link: 'Structures/structureswiki.html#sewer' },
+                { term: 'The Hole', link: 'Structures/structureswiki.html#thehole' },
+                { term: 'Stonehenge', link: 'Structures/structureswiki.html#stonehenge' },
+                { term: 'Small Graveyard', link: 'Structures/structureswiki.html#sgl' },
+                { term: 'Fence Opening', link: 'Structures/structureswiki.html#fenceopen' },
+                { term: 'Circle of Benches', link: 'Structures/structureswiki.html#circlebench' },
+                { term: 'Guardpost', link: 'Structures/structureswiki.html#guardpost' },
+                { term: 'Secret Staircase', link: 'Structures/structureswiki.html#secretstairs' },
+                { term: 'SCP-432 Room', link: 'Structures/structureswiki.html#scproom' },
+                { term: 'Wooded Shack', link: 'Structures/structureswiki.html#wooded' },
+                { term: 'Ariral Picnic', link: 'Structures/structureswiki.html#picnic' },
+                { term: 'Ariral Treehouse', link: 'Structures/structureswiki.html#ariraltreehouse' },
+                { term: 'Erie and Argemia Statues', link: 'Structures/structureswiki.html#erie' },
+                { term: 'Crashed Ariral Tp Chamber', link: 'Structures/structureswiki.html#crashedtp' },
+                { term: 'Ritual Altar', link: 'Structures/structureswiki.html#ritual' },
+                { term: 'Abandoned Well', link: 'Structures/structureswiki.html#well' },
+                { term: 'Shroomcircle', link: 'Structures/structureswiki.html#shroom' },
+                { term: 'AB Cave', link: 'Structures/structureswiki.html#abcave' },
+                { term: 'untitled_27', link: 'Worlds/anomalyworldswiki.html#untitled_27' },
+                { term: 'untitled_42', link: 'Worlds/anomalyworldswiki.html#untitled_42' },
+                { term: 'untitled_61', link: 'Worlds/anomalyworldswiki.html#untitled_61' },
+                { term: 'untitled_83', link: 'Worlds/anomalyworldswiki.html#untitled_83' },
+                { term: 'untitled_87', link: 'Worlds/anomalyworldswiki.html#untitled_87' },
+                { term: 'untitled_104', link: 'Worlds/anomalyworldswiki.html#untitled_104' },
+                { term: 'untitled_129', link: 'Worlds/anomalyworldswiki.html#untitled_129' },
+                { term: 'untitled_9999', link: 'Worlds/anomalyworldswiki.html#untitled_9999' },
+                { term: '51', link: 'Worlds/anomalyworldswiki.html#51' },
+                { term: 'untitled_125', link: 'Worlds/anomalyworldswiki.html#untitled_125' },
+                { term: 'untitled_152', link: 'Worlds/anomalyworldswiki.html#untitled_152' },
+                { term: 'untitled_-1', link: 'Worlds/otherworldswiki.html#untitled-1' },
+                { term: 'untitled_8', link: 'Worlds/otherworldswiki.html#untitled_8' },
+                { term: 'tutorial', link: 'Worlds/otherworldswiki.html#tutorial' },
+                { term: 'tutorial2', link: 'Worlds/otherworldswiki.html#tutorial2' },
+                { term: 'tutorial3', link: 'Worlds/otherworldswiki.html#tutorial3' },
+                { term: 'pipepipe', link: 'Worlds/otherworldswiki.html#pipepipe' },
+                { term: 'untitled_0', link: 'Worlds/testworldswiki.html#0' },
+                { term: 'untitled_1', link: 'Worlds/testworldswiki.html#1' },
+                { term: 'untitled_2', link: 'Worlds/testworldswiki.html#2' },
+                { term: 'untitled_3', link: 'Worlds/testworldswiki.html#3' },
+                { term: 'untitled_4', link: 'Worlds/testworldswiki.html#4' },
+                { term: 'untitled_5', link: 'Worlds/testworldswiki.html#5' },
+                { term: 'untitled_6', link: 'Worlds/testworldswiki.html#6' },
+                { term: 'untitled_7', link: 'Worlds/testworldswiki.html#7' },
+                { term: 'untitled_8', link: 'Worlds/testworldswiki.html#8' },
+                { term: 'untitled_9', link: 'Worlds/testworldswiki.html#9' },
+                { term: 'untitled_10', link: 'Worlds/testworldswiki.html#10' },
+                { term: 'untitled_11', link: 'Worlds/testworldswiki.html#11' },
+                { term: 'untitled_12', link: 'Worlds/testworldswiki.html#12' },
+                { term: 'untitled_13', link: 'Worlds/testworldswiki.html#untitled_13' },
+                { term: 'untitled_14', link: 'Worlds/testworldswiki.html#14' },
+                { term: 'untitled_15', link: 'Worlds/testworldswiki.html#15' },
+                { term: 'untitled_16', link: 'Worlds/testworldswiki.html#16' },
+                { term: 'untitled_17', link: 'Worlds/testworldswiki.html#17' },
+                { term: 'untitled_18', link: 'Worlds/testworldswiki.html#18' },
+                { term: 'untitled_19', link: 'Worlds/testworldswiki.html#19' },
+                { term: 'untitled_20', link: 'Worlds/testworldswiki.html#20' },
+                { term: 'untitled_21', link: 'Worlds/testworldswiki.html#21' },
+                { term: 'untitled_22', link: 'Worlds/testworldswiki.html#22' },
+                { term: 'untitled_23', link: 'Worlds/testworldswiki.html#23' },
+                { term: 'untitled_24', link: 'Worlds/testworldswiki.html#24' },
+                { term: 'untitled_25', link: 'Worlds/testworldswiki.html#25' },
+                { term: 'untitled_26', link: 'Worlds/testworldswiki.html#26' },
+                { term: 'untitled_27', link: 'Worlds/testworldswiki.html#27' },
+                { term: 'untitled_28', link: 'Worlds/testworldswiki.html#28' },
+                { term: 'untitled_29', link: 'Worlds/testworldswiki.html#29' },
+                { term: 'untitled_30', link: 'Worlds/testworldswiki.html#30' },
+                { term: 'untitled_31', link: 'Worlds/testworldswiki.html#31' },
+                { term: 'untitled_32', link: 'Worlds/testworldswiki.html#32' },
+                { term: 'untitled_33', link: 'Worlds/testworldswiki.html#33' },
+                { term: 'untitled_34', link: 'Worlds/testworldswiki.html#34' },
+                { term: 'untitled_35', link: 'Worlds/testworldswiki.html#35' },
+                { term: 'untitled_36', link: 'Worlds/testworldswiki.html#36' },
+                { term: 'untitled_37', link: 'Worlds/testworldswiki.html#37' },
+                { term: 'untitled_38', link: 'Worlds/testworldswiki.html#38' },
+                { term: 'untitled_39', link: 'Worlds/testworldswiki.html#39' },
+                { term: 'untitled_40', link: 'Worlds/testworldswiki.html#40' },
+                { term: 'untitled_41', link: 'Worlds/testworldswiki.html#41' },
+                { term: 'untitled_42', link: 'Worlds/testworldswiki.html#42' },
+                { term: 'untitled_43', link: 'Worlds/testworldswiki.html#43' },
+                { term: 'untitled_44', link: 'Worlds/testworldswiki.html#44' },
+                { term: 'untitled_45', link: 'Worlds/testworldswiki.html#45' },
+                { term: 'untitled_46', link: 'Worlds/testworldswiki.html#46' },
+                { term: 'untitled_47', link: 'Worlds/testworldswiki.html#47' },
+                { term: 'untitled_48', link: 'Worlds/testworldswiki.html#48' },
+                { term: 'untitled_49', link: 'Worlds/testworldswiki.html#49' },
+                { term: 'untitled_50', link: 'Worlds/testworldswiki.html#50' },
+                { term: 'untitled_51', link: 'Worlds/testworldswiki.html#51' },
+                { term: 'untitled_52', link: 'Worlds/testworldswiki.html#52' },
+                { term: 'untitled_53', link: 'Worlds/testworldswiki.html#53' },
+                { term: 'untitled_54', link: 'Worlds/testworldswiki.html#54' },
+                { term: 'untitled_55', link: 'Worlds/testworldswiki.html#55' },
+                { term: 'untitled_56', link: 'Worlds/testworldswiki.html#56' },
+                { term: 'untitled_57', link: 'Worlds/testworldswiki.html#57' },
+                { term: 'untitled_58', link: 'Worlds/testworldswiki.html#58' },
+                { term: 'untitled_59', link: 'Worlds/testworldswiki.html#59' },
+                { term: 'untitled_60', link: 'Worlds/testworldswiki.html#60' },
+                { term: 'untitled_61', link: 'Worlds/testworldswiki.html#61' },
+                { term: 'untitled_62', link: 'Worlds/testworldswiki.html#62' },
+                { term: 'untitled_63', link: 'Worlds/testworldswiki.html#63' },
+                { term: 'untitled_64', link: 'Worlds/testworldswiki.html#64' },
+                { term: 'untitled_65', link: 'Worlds/testworldswiki.html#65' },
+                { term: 'untitled_66', link: 'Worlds/testworldswiki.html#66' },
+                { term: 'untitled_67', link: 'Worlds/testworldswiki.html#67' },
+                { term: 'untitled_68', link: 'Worlds/testworldswiki.html#68' },
+                { term: 'untitled_69', link: 'Worlds/testworldswiki.html#69' },
+                { term: 'untitled_70', link: 'Worlds/testworldswiki.html#70' },
+                { term: 'untitled_71', link: 'Worlds/testworldswiki.html#71' },
+                { term: 'untitled_72', link: 'Worlds/testworldswiki.html#72' },
+                { term: 'untitled_73', link: 'Worlds/testworldswiki.html#73' },
+                { term: 'untitled_74', link: 'Worlds/testworldswiki.html#74' },
+                { term: 'untitled_75', link: 'Worlds/testworldswiki.html#75' },
+                { term: 'untitled_76', link: 'Worlds/testworldswiki.html#76' },
+                { term: 'untitled_77', link: 'Worlds/testworldswiki.html#77' },
+                { term: 'untitled_78', link: 'Worlds/testworldswiki.html#78' },
+                { term: 'untitled_79', link: 'Worlds/testworldswiki.html#79' },
+                { term: 'untitled_80', link: 'Worlds/testworldswiki.html#80' },
+                { term: 'untitled_81', link: 'Worlds/testworldswiki.html#81' },
+                { term: 'untitled_82', link: 'Worlds/testworldswiki.html#82' },
+                { term: 'untitled_83', link: 'Worlds/testworldswiki.html#83' },
+                { term: 'untitled_84', link: 'Worlds/testworldswiki.html#84' },
+                { term: 'untitled_85', link: 'Worlds/testworldswiki.html#85' },
+                { term: 'untitled_86', link: 'Worlds/testworldswiki.html#86' },
+                { term: 'untitled_87', link: 'Worlds/testworldswiki.html#87' },
+                { term: 'untitled_88', link: 'Worlds/testworldswiki.html#88' },
+                { term: 'untitled_89', link: 'Worlds/testworldswiki.html#89' },
+                { term: 'untitled_90', link: 'Worlds/testworldswiki.html#90' },
+                { term: 'untitled_91', link: 'Worlds/testworldswiki.html#91' },
+                { term: 'untitled_92', link: 'Worlds/testworldswiki.html#92' },
+                { term: 'untitled_93', link: 'Worlds/testworldswiki.html#93' },
+                { term: 'untitled_94', link: 'Worlds/testworldswiki.html#94' },
+                { term: 'untitled_95', link: 'Worlds/testworldswiki.html#95' },
+                { term: 'untitled_96', link: 'Worlds/testworldswiki.html#96' },
+                { term: 'untitled_97', link: 'Worlds/testworldswiki.html#97' },
+                { term: 'untitled_98', link: 'Worlds/testworldswiki.html#98' },
+                { term: 'untitled_99', link: 'Worlds/testworldswiki.html#99' },
+                { term: 'untitled_100', link: 'Worlds/testworldswiki.html#100' },
+                { term: 'untitled_101', link: 'Worlds/testworldswiki.html#101' },
+                { term: 'untitled_102', link: 'Worlds/testworldswiki.html#102' },
+                { term: 'untitled_103', link: 'Worlds/testworldswiki.html#103' },
+                { term: 'untitled_104', link: 'Worlds/testworldswiki.html#104' },
+                { term: 'untitled_105', link: 'Worlds/testworldswiki.html#105' },
+                { term: 'untitled_106', link: 'Worlds/testworldswiki.html#106' },
+                { term: 'untitled_107', link: 'Worlds/testworldswiki.html#107' },
+                { term: 'untitled_108', link: 'Worlds/testworldswiki.html#108' },
+                { term: 'untitled_109', link: 'Worlds/testworldswiki.html#109' },
+                { term: 'untitled_110', link: 'Worlds/testworldswiki.html#110' },
+                { term: 'untitled_111', link: 'Worlds/testworldswiki.html#111' },
+                { term: 'untitled_112', link: 'Worlds/testworldswiki.html#112' },
+                { term: 'untitled_113', link: 'Worlds/testworldswiki.html#113' },
+                { term: 'untitled_114', link: 'Worlds/testworldswiki.html#114' },
+                { term: 'untitled_115', link: 'Worlds/testworldswiki.html#115' },
+                { term: 'untitled_116', link: 'Worlds/testworldswiki.html#116' },
+                { term: 'untitled_117', link: 'Worlds/testworldswiki.html#117' },
+                { term: 'untitled_118', link: 'Worlds/testworldswiki.html#118' },
+                { term: 'untitled_119', link: 'Worlds/testworldswiki.html#119' },
+                { term: 'untitled_120', link: 'Worlds/testworldswiki.html#120' },
+                { term: 'untitled_121', link: 'Worlds/testworldswiki.html#121' },
+                { term: 'untitled_122', link: 'Worlds/testworldswiki.html#122' },
+                { term: 'untitled_123', link: 'Worlds/testworldswiki.html#123' },
+                { term: 'untitled_124', link: 'Worlds/testworldswiki.html#124' },
+                { term: 'untitled_125', link: 'Worlds/testworldswiki.html#125' },
+                { term: 'untitled_126', link: 'Worlds/testworldswiki.html#126' },
+                { term: 'untitled_127', link: 'Worlds/testworldswiki.html#127' },
+                { term: 'untitled_128', link: 'Worlds/testworldswiki.html#128' },
+                { term: 'untitled_129', link: 'Worlds/testworldswiki.html#129' },
+                { term: 'untitled_130', link: 'Worlds/testworldswiki.html#130' },
+                { term: 'untitled_131', link: 'Worlds/testworldswiki.html#131' },
+                { term: 'untitled_132', link: 'Worlds/testworldswiki.html#132' },
+                { term: 'untitled_133', link: 'Worlds/testworldswiki.html#133' },
+                { term: 'untitled_134', link: 'Worlds/testworldswiki.html#134' },
+                { term: 'untitled_135', link: 'Worlds/testworldswiki.html#135' },
+                { term: 'untitled_136', link: 'Worlds/testworldswiki.html#136' },
+                { term: 'untitled_137', link: 'Worlds/testworldswiki.html#137' },
+                { term: 'untitled_138', link: 'Worlds/testworldswiki.html#138' },
+                { term: 'untitled_139', link: 'Worlds/testworldswiki.html#139' },
+                { term: 'untitled_140', link: 'Worlds/testworldswiki.html#140' },
+                { term: 'untitled_141', link: 'Worlds/testworldswiki.html#141' },
+                { term: 'untitled_142', link: 'Worlds/testworldswiki.html#142' },
+                { term: 'untitled_143', link: 'Worlds/testworldswiki.html#143' },
+                { term: 'untitled_144', link: 'Worlds/testworldswiki.html#144' },
+                { term: 'untitled_145', link: 'Worlds/testworldswiki.html#145' },
+                { term: 'untitled_146', link: 'Worlds/testworldswiki.html#146' },
+                { term: 'untitled_147', link: 'Worlds/testworldswiki.html#147' },
+                { term: 'untitled_148', link: 'Worlds/testworldswiki.html#148' },
+                { term: 'untitled_149', link: 'Worlds/testworldswiki.html#149' },
+                { term: 'untitled_150', link: 'Worlds/testworldswiki.html#150' },
+                { term: 'untitled_151', link: 'Worlds/testworldswiki.html#151' },
+                { term: 'untitled_152', link: 'Worlds/testworldswiki.html#152' },
+                { term: 'untitled_153', link: 'Worlds/testworldswiki.html#153' },
+                { term: 'untitled_154', link: 'Worlds/testworldswiki.html#154' },
+                { term: 'untitled_155', link: 'Worlds/testworldswiki.html#155' },
+                { term: 'untitled_156', link: 'Worlds/testworldswiki.html#156' },
+                { term: 'untitled_157', link: 'Worlds/testworldswiki.html#157' },
+                { term: 'untitled_158', link: 'Worlds/testworldswiki.html#158' },
+                { term: 'untitled_159', link: 'Worlds/testworldswiki.html#159' },
+                { term: 'untitled_160', link: 'Worlds/testworldswiki.html#160' },
+                { term: 'untitled_161', link: 'Worlds/testworldswiki.html#161' }
+            ];
+            const elementsToSearch = ['td', 'p'];
+            elementsToSearch.forEach(tag => {
+                const tags = document.getElementsByTagName(tag);
+                Array.from(tags).forEach(element => {
+                    if (element.innerHTML.toLowerCase().includes(searchText)) {
+                        const excludedElements = element.querySelectorAll('a, img');
+                        let contentToHighlight = element.innerHTML;
+                        excludedElements.forEach(excludedElement => {
+                            contentToHighlight = contentToHighlight.replace(excludedElement.outerHTML, excludedElement.innerText);
+                        });
+                        const regex = new RegExp(searchText, 'gi');
+                        const highlightedContent = contentToHighlight.replace(regex, match => `<mark style="color:blue">${match}</mark>`);
+                        const resultItem = document.createElement('div');
+                        resultItem.innerHTML = `<p style="text-align:left;"><a style="color:white;" href="#${element.id}">${highlightedContent}</a></p>`;
+                        searchResultsContainer.appendChild(resultItem);
+                    }
+                });
+            });
+            predefinedTerms.forEach(termObj => {
+                const { term, link } = termObj;
+                if (term.toLowerCase().includes(searchText)) {
+                    const resultItem = document.createElement('div');
+                    resultItem.innerHTML = `<p style="text-align:left;"><a style="color:white;" href="${link}">${term}</a></p>`;
+                    searchResultsContainer.appendChild(resultItem);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
