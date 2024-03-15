@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Random Events VOTV Archive</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("../Images/6.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <script src="../Scripts/navigator.js"></script>
+        <script src="../Scripts/tableimage.js"></script>
+    </header>
+    <div class="content">
+        <div class="background-box"></div>
+        <h1 style="text-align:center; font-style:oblique;">Random Events</h1>
+        <h2 style="text-align:center; font-style:oblique;">Description:</h2>
+        <p style="text-align:center;">A lot of the events in VOTV are scripted story events, however some events that exist in the game are either not scripted but rather are completely random.</p>
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Description</th>
+                <th>Rarity</th>
+                <th>Image</th>
+            </tr>
+            <tr>
+                <td id="blackfog">Black Fog Event</td>
+                <td id="1" style="text-align: left;">A creepy noise can be heard from across the map, soon the world will begin to grow darker and foggier with each second passing until it eventually becomes so dark and so foggy that you can't see 20 meters in front of you. This event usually lasts 3-4 minutes and isn't very threatening.</td>
+                <td id="2" style="text-align: center;">Common</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/1.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/2.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                    <div class="container">
+                        <img src="Images/RandomEvents/3.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="redsky">Red Sky Event</td>
+                <td id="3" style="text-align: left;">At night the sky will turn completely bright red instead of the usual dark black color and it will stay like this for some time until it eventually disappears.</td>
+                <td id="4" style="text-align: center;">Uncommon</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/4.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="gears">Gears Event</td>
+                <td id="5" style="text-align: left;">7-12 giant gears can be seen and heard from across the map, these gears are animated and seen spinning around, however they have no collision and are stationary. This lasts for some time before the giant gears disappear.</td>
+                <td id="6" style="text-align: center;">Very Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/5.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="ghost">Ghost Graffiti Event</td>
+                <td id="7" style="text-align: left;">A drawing or graffiti will show up on a base of a random satellite dish.</td>
+                <td id="8" style="text-align: center;">Common</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/6.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="chair">Chair Skeleton Event</td>
+                <td id="9" style="text-align: left;">After walking and exploring for a while and upon returning back to base, you may encounter a a bunch of bone props that is organized and spawned in a skeleton shape and is sitting on the main chair. You can take apart the bones, however do note that the skull cannot be used for the Hell Opening Event.</td>
+                <td id="10" style="text-align: center;">Common</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/7.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="jellyfish">Jellyfish Event</td>
+                <td id="11" style="text-align: left;">A bunch of jellyfish will spawn and begin flying in the sky, they will do this for a long time before eventually flying out of bounds.</td>
+                <td id="12" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/8.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="roar">Roar Event</td>
+                <td id="13" style="text-align: left;">In the older versions of VOTV, the roar event is supposed to signify the end of the game and demo completion, this was usually triggered upon day 35. But since then in the newer versions the event appears to be completely random or possibly removed. It may have a chance of appearing on day 45 in storymode but its very unlikely.</td>
+                <td id="14" style="text-align: center;">Super Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/9.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="possessedkerfus">Possessed Kerfus Event</td>
+                <td id="15" style="text-align: left;">Kerfus despite being off will move on its own in a random location and after some time will drop a ball of flesh on the ground.</td>
+                <td id="16" style="text-align: center;">Extremely Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/10.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="possessedtv">Possessed TV Event</td>
+                <td id="17" style="text-align: left;">A TV prop will randomly spawn in any part of the world and will be autoplaying an error video. If you were to interact with it the TV will break off into bloody body parts and spill some blood all over.</td>
+                <td id="18" style="text-align: center;">Extremely Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/11.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/12.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="lighttube">Light Tube Event</td>
+                <td id="19" style="text-align: left;">A light tube prop with a bright blue light emitting will spawn high above player, randomly in any part of the forest. It will quickly fall down and shatter, you can attempt to catch the prop and keep it as extra light.</td>
+                <td id="20" style="text-align: center;">Very Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/13.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="pinkwisps">Pink Wisps Event</td>
+                <td id="21" style="text-align: left;"><a style="color: greenyellow;" href="../Entities/entitieswiki.html#pinkwisp">Pink Wisp Entities</a> will spawn all over the world.</td>
+                <td id="22" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/14.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/15.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="fleshrain">Flesh Rain Event</td>
+                <td id="23" style="text-align: left;">A loud shaking roar will be heard all over the world, then the flesh mesh balls will start dropping for 1-2 minutes all around but will consolidate around the player. This gives the player tons of free flesh.</td>
+                <td id="24" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/18.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="mannequindisappearance">Mannequin Disappearance Event</td>
+                <td id="25" style="text-align: left;">All mannequins in your base will disappear. However, they can all be found laying in the small patch of gravel near the Uniform Satellite Dish.</td>
+                <td id="26" style="text-align: center;">Uncommon</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/19.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/20.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="mannequinmoving">Mannequin Moving Event</td>
+                <td id="27" style="text-align: left;">One per day, mannequins will first take off their standing pole and begin moving around. They usually move towards the player and while they don't do anything initially, if they are lit on fire they will begin attacking, hurting, and knocking down the player.</td>
+                <td id="28" style="text-align: center;">Uncommon</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/28.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/29.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="mannequinreorganize">Mannequin Reorganize Event</td>
+                <td id="29" style="text-align: left;">A posed mannequin will be blocking the main entrance hallway, another posed mannequin looking through Kel's room window , and 6 cups stacked on each other either on the table or on the floor.</td>
+                <td id="30" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/23.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/27.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                    <div class="container">
+                        <img src="Images/RandomEvents/26.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="bluelight">Blue Light Prank Event</td>
+                <td id="31" style="text-align: left;">All power switches will be switched off just like Poweroff Event, however this time there will be extremely bright light blue tubes lighting certain parts of the base. The entity radar will detect these as entities, however they are extremely fragile so be very careful when handling them.</td>
+                <td id="32" style="text-align: center;">Common</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/21.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/24.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                    <div class="container">
+                        <img src="Images/RandomEvents/25.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/30.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="passwordattempt">Password Attempt Event</td>
+                <td id="33" style="text-align: left;">Throughout the day, you may hear or encounter a mysterious invisible force attempting to guess the password to the keylocks.</td>
+                <td id="34" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/22.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="brokenvent">Broken Vent Event</td>
+                <td id="35" style="text-align: left;">The vent either above the Signal room or Kel's room will break open and fall off.</td>
+                <td id="36" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/31.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/32.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="enakindness">Ena's Kindness Event</td>
+                <td id="37" style="text-align: left;">Ena will send you some crossiants and a supportive note.</td>
+                <td id="38" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/35.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/34.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="misplacedsushi">Misplaced Sushi Event</td>
+                <td id="39" style="text-align: left;">A box of sushi and a note detailing its accidental delivery.</td>
+                <td id="40" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/36.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/37.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="radiotower">Radiotower Disappearance Event</td>
+                <td id="41" style="text-align: left;">The Radiotower Structure will disappear completely for a day or two.</td>
+                <td id="42" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/33.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="grungeoil">Grunge Oils Event</td>
+                <td id="43" style="text-align: left;">Spills of oil will spawn in front of the main entrance doorway, Kel's room patio doorway, below Radiotower base, and the garage doorway.</td>
+                <td id="44" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/38.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                        <img src="Images/RandomEvents/39.png" alt="VOTV Archive Image" width="200" height="200" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="security">Security Breach</td>
+                <td id="45" style="text-align: left;">On the command terminal, you will notice some random user typing out commands, supposed trying to shut something down. Luckily, none of the commands work and the user eventually leaves.</td>
+                <td id="46" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/40.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="furfur">Furfur Locker Head</td>
+                <td id="47" style="text-align: left;">When opening a locker anywhere in the Main Base, there is a chance a Furfur head can pop out and jumpscare.</td>
+                <td id="48" style="text-align: center;">Rare</td>
+                <td>
+                    <div class="container">
+                        <img src="Images/RandomEvents/41.png" alt="VOTV Archive Image" onclick="openImage(this)">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <script src="../Scripts/warning.js"></script>
+        <div class="search-container">
+            <img src="../Images/SearchIcon.png" alt="Search Icon" class="search-icon">
+            <input type="text" id="searchBar" class="search-bar" placeholder="Search...">
+            <div id="searchResults"></div>
+        </div>
+    </div>
+    <script src="../Scripts/basejs.js"></script>
+    <script src="../Scripts/infobtnjs.js"></script>
+    <script src="../Scripts/searchbar.js"></script>
+</body>
+</html>
