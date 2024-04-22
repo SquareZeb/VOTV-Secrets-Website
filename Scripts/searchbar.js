@@ -188,6 +188,7 @@ document.getElementById('searchBar').addEventListener('input', function () {
         { term: 'Piramid Event', link: '../Events/storymodeeventswiki.html#piramid' },
         { term: 'Rozital Patrol Event', link: '../Events/storymodeeventswiki.html#rpe' },
         { term: 'Soltomia Cleaning Event', link: '../Events/storymodeeventswiki.html#sce' },
+        { term: 'UFO Event', link: '../Events/storymodeeventswiki.html#ufo' },
         { term: 'RozitBorg Event', link: '../Events/storymodeeventswiki.html#rozitborg' },
         { term: 'Rozital Hole Event', link: '../Events/storymodeeventswiki.html#rhe' },
         { term: 'Grays Dumping Event', link: '../Events/storymodeeventswiki.html#gde' },
