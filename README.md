@@ -1,54 +1,13 @@
-# VOTV-Secrets-Website
-VOTV Secrets Website is dedicated to archiving all of the secrets, spoilers, and easter eggs in Voices of the Void (VOTV) game developed by MrDrNose. This website includes multiple webpages and sections that detail each part very extensively. This website also aims to keep all information as updated and accurate as possible, as VOTV is still in beta/alpha so it isn't fully released yet. So I'd advise you to expect possible incorrect information, outdated data, and missing details, do not take everything you see on this website literally. Take it with a grain of salt. As with reports of misinformation I would like to let you know that I am not attempting or trying to misinform anything with anyone about this game. This game is relatively large and not very easy to keep up with especially as a one man project.
-
-## Note:
-It is highly recommended that before browsing on this site, actually go play the game of VOTV first. Just so that none of the content or info you see on the site will ruin the game experience for you. But the choice is up to you and yours only. If you choose to browse on this site, you may not share or leak any of the content you view on this site on other platforms, media, or forums. Anything and everything that you see on the website should be kept to yourself. I'm not responsible for ruining anyone's experiences in VOTV.
-
-## Features:
-
-### Image Viewer:
-You can click on any of the images to view/zoom them closer or download them.
-![3](https://github.com/SquareZeb/VOTV-Secrets-Website/assets/136224084/0c99d52b-f079-4d84-a0a3-6f6253144820)
-
-### Audio Player:
-An audio player will look like a white elongated oval that has a stop, play, and pause buttons for audio. A progress bar that can be moved to different times of the audio. It also has volume control and playback speed that you can change.
-![Untitled](https://github.com/SquareZeb/VOTV-Secrets-Website/assets/136224084/1eac55a3-5288-4e54-8c80-1e6999ea7876)
-
-
-### More Info/Info Condenser Button:
-A small white button that serves to condense info on the webpages to ensure a clean and very sleek looking website. You can click on it to reveal more information if needed.
-![5](https://github.com/SquareZeb/VOTV-Secrets-Website/assets/136224084/4786acf0-1fea-430b-a3f4-0f75ea148f1c)
-
-
-### Search Bar:
-The search bar is located at the very top left corner next to the tabs. ‎‎‎‎‎‎‎‎‎‎‎‎‎‎‎
-
-
-
-![4](https://github.com/SquareZeb/VOTV-Secrets-Website/assets/136224084/e7287460-b980-45ae-a966-730cf8a9c7f8)
-
-You can hover over it to click and type in whatever query you are looking for. 
-
-
-
-![1](https://github.com/SquareZeb/VOTV-Secrets-Website/assets/136224084/bc6283bb-9578-4784-b01c-088bf546eecb)
-
-
-
-The search bar will display all results of the current page text and results of other webpages. You can click on the results that appear below it and it will take you to where it's located.
-
-
-![2](https://github.com/SquareZeb/VOTV-Secrets-Website/assets/136224084/32a5e5e3-0d8b-4a97-a0b5-065a939a82c0)
-
-## Credits:
-With that being said, you may also contact me if there are any new easter eggs or there is a bug with the website: https://discordapp.com/users/813250158384906260
-
-Game download: https://mrdrnose.itch.io/votv
-
-
-EternityDev Discord: https://discord.com/invite/WKBvqu4tjV
-
-
-**NOT AFFILIATED OR ASSOCIATED WITH THE ETERNITYDEV OR MRDRNOSE**
-
-Created by SquareZeb
+# Update:
+I am shutting down the Voices of the Void Secrets Archive for the timebeing.
+# What's Happening:
+I am going to remove the Voices of the Void Secrets Archive from github pages and stop hosting it. However, I will not remove or delete this repository including all the files and assets for this website. Meaning you can still browse this repository and check out it out in its full glory on your local machines.
+# Why:
+I am shutting down this website for three reasons:
+  1.  I have lost all interest in the game Voices of the Void. While the game may be fun for some it isn't for me anymore. I've played this game for over a year now and I personally don't like the direction it is heading and if I'm honest I don't think it will go anywhere in the near future since its development is slow. Hence since I'm not interested I'm more likely to get information wrong within the wiki so I'm just going to avoid angering certain individuals.
+  2.  I don't have time anymore. Keeping this website up and running with updated information takes a lot of time off of my hands. I am quite busy with other projects that I deem as more important as the Voices of the Void Archive was mostly just a fun project just to get me into the basics of HTML, Java, and CSS.
+  3.  There are other options. I've taken a look at wiki.gg and fandom for voices of the void and in short its good. Not to mention these are run by entire communities as opposed to one person such as myself so I figured I'd let myself take a break while they do all the work. Plus since they are run by entire communities it is easier and much faster to update things whereas it took me weeks to fully update to the next version.
+# What's Next:
+I will hand this project over to Nerd on discord since Nerd had redone this entire website in VueJS and wants to continue it. Now while the Voices of the Void Secrets Archive will be shut down, the Interactive Map for VOTV will be kept up and running. I will continue the working on and updating the map, so you need not worry about it getting shutdown too.
+# Outro:
+I thank you all for the support and feedback you all have given me on the website. It was a lot of fun working on it but for now I will be moving on. So I wish you all the best!
